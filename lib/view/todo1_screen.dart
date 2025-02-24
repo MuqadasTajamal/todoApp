@@ -124,6 +124,13 @@ class _Todo1ScreenState extends State<Todo1Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: MyColors.black,
+        actions: [InkWell(
+        onTap: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_forward,color: Colors.white,))],),
       floatingActionButton: list.isEmpty
           ? Container(
               height: 50,
