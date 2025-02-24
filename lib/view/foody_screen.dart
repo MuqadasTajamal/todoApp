@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 import 'package:flutter_google_1/view/lifestyle_screen.dart';
 import 'package:flutter_google_1/view/travel_screen.dart';
 
@@ -25,24 +26,24 @@ class FoodyScreen extends StatelessWidget {
            Icon(Icons.dehaze,weight: 50,color: Colors.grey,),
            SizedBox(width: 5,),
            Text("Foody",style: TextStyle(
-        color: Colors.amber,
+        color: MyColors.amber,
         fontSize: 20,fontWeight: FontWeight.bold
            ),),
            Spacer(),
-           Icon(Icons.search,color: Colors.grey,weight: 50,),
+           Icon(Icons.search,color: MyColors.grey,weight: 50,),
            SizedBox(width: 5,),
-          Icon(Icons.person,color: Colors.grey,weight: 50,),
+          Icon(Icons.person,color: MyColors.grey,weight: 50,),
           InkWell(onTap: (){
             Navigator.push(context, CupertinoPageRoute(builder: (context)=>TravelScreen()));
           },
-            child: Icon(Icons. arrow_forward,color: Colors.grey,weight: 50, ))
+            child: Icon(Icons. arrow_forward,color: MyColors.grey,weight: 50, ))
          ],
        ),
        SizedBox(height: 10,),
        Column(crossAxisAlignment: CrossAxisAlignment.stretch,
          children: [
            Container(height:150 ,width: 2000,
-           decoration:  BoxDecoration(border: Border.all(color: Colors.grey,
+           decoration:  BoxDecoration(border: Border.all(color:MyColors.grey,
 width: 5),
             image:
              DecorationImage(
@@ -66,7 +67,7 @@ Spacer(),
  ],),
  SizedBox(height: 10,),
  Container(height: 200,width: 2000,
- decoration: BoxDecoration(border: Border.all(color: Colors.grey,
+ decoration: BoxDecoration(border: Border.all(color: MyColors.grey,
 width: 5),
   image: DecorationImage(image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1lxxTHJc9ZdWLzmvUNpcmLjdlIBVyOGwFg&s"),fit: BoxFit.cover)
  ),),
@@ -77,7 +78,7 @@ Row(mainAxisAlignment: MainAxisAlignment.center,
 
 
 Container(height: 140,width: 2000,
-decoration: BoxDecoration(border: Border.all(color: Colors.grey,
+decoration: BoxDecoration(border: Border.all(color: MyColors.grey,
 width: 5),
   image: DecorationImage(image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgpd1QzqXn0JFy-_3nCNqfMXnrDunfxwy-w&s"),fit: BoxFit.cover)
 ),)

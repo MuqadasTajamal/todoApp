@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class NewScreen extends StatelessWidget {
   const NewScreen({super.key});
@@ -7,25 +8,25 @@ class NewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: MyColors.redcolor,
         title: Text(
           "Overview",
           style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               // fontFamily: "Jose2",
-              color: Colors.white
+              color: MyColors.whitecolor
               ,fontFamily: "Jose1"),
         ),
         centerTitle: true,
         leading: Icon(
           Icons.menu,
-          color: Colors.white,
+          color: MyColors.whitecolor,
         ),
         actions: [
           Icon(
             Icons.person,
-            color: Colors.white,
+            color: MyColors.whitecolor,
           ),
           SizedBox(width: 5,)
         ],
@@ -52,7 +53,7 @@ class NewScreen extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white
+                        color: MyColors.whitecolor
                         ,fontFamily: "Baloo"),
                   ),
                   SizedBox(
@@ -63,7 +64,7 @@ class NewScreen extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.red,fontFamily: "Baloo"),
+                        color: MyColors.redcolor,fontFamily: "Baloo"),
                   ),
                   SizedBox(
                     height: 20,
@@ -73,11 +74,11 @@ Container(height: 50,width: 300,
   child: TextField(decoration: InputDecoration
   (border:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),)),
   
-  focusColor: Colors.white,
-  focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: Colors.white),borderRadius: BorderRadius.circular(40) ),
+  focusColor: MyColors.whitecolor,
+  focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: MyColors.whitecolor),borderRadius: BorderRadius.circular(40) ),
   
-  hintText: "search",hintStyle: TextStyle(color:Colors.white),
-  suffixIcon: Icon(Icons.search),suffixIconColor: Colors.white),),
+  hintText: "search",hintStyle: TextStyle(color:MyColors.whitecolor),
+  suffixIcon: Icon(Icons.search),suffixIconColor: MyColors.whitecolor),),
 ),
                         ]              ),
             ),
@@ -86,7 +87,7 @@ Container(height: 50,width: 300,
                 Container(
                   height: 80,
                   width: 250,
-                  decoration: BoxDecoration(color: Colors.red),
+                  decoration: BoxDecoration(color: MyColors.redcolor),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
@@ -98,7 +99,7 @@ Container(height: 50,width: 300,
                         Text(
                           "Let's Cook",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: MyColors.whitecolor,
                               fontSize: 15,
                               fontWeight: FontWeight.bold
                               ,fontFamily: "jqse1"),
@@ -109,7 +110,7 @@ Container(height: 50,width: 300,
                         Text(
                           "Tasty Recipes",
                           style: TextStyle(
-                              color: Colors.red.shade900,
+                              color: MyColors.red,
                               fontSize: 15,
                               fontWeight: FontWeight.bold
                               ,fontFamily: "jqse1"), ),
@@ -132,7 +133,7 @@ Container(height: 50,width: 300,
                     height: 50,
                     width: 50,
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black),
+                        border: Border.all(color: MyColors.black),
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
                             image: NetworkImage(
@@ -146,7 +147,7 @@ Container(height: 50,width: 300,
               height: 40,
               width: 390,
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: MyColors.black,
               ),
               child: Row(
                 children: [
@@ -155,7 +156,7 @@ Container(height: 50,width: 300,
                   ),
                   Icon(
                     Icons.menu,
-                    color: Colors.white,
+                    color: MyColors.whitecolor,
                   ),
                   SizedBox(
                     width: 110,
@@ -165,14 +166,14 @@ Container(height: 50,width: 300,
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white,fontFamily: "jqse1"),
+                        color: MyColors.whitecolor,fontFamily: "jqse1"),
                   ),
                   SizedBox(
                     width: 110,
                   ),
                   Icon(
                     Icons.person,
-                    color: Colors.white,
+                    color: MyColors.whitecolor,
                   ),
                   SizedBox(
                     width: 10,
@@ -196,7 +197,7 @@ Container(height: 50,width: 300,
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.red
+                            color: MyColors.redcolor
                             ,fontFamily: "Baloo"),
                       ),
 
@@ -205,7 +206,7 @@ Text(
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.red
+                            color: MyColors.redcolor
                             ,fontFamily: "Baloo"),
                       ),
 
@@ -222,14 +223,14 @@ Text(
                         Text(
                           "Lorem ipsim Nam Libero tempore cum solute  ",
                           style: TextStyle(
-                              color: Colors.grey,
+                              color: MyColors.grey,
                               fontSize: 15,
                               fontWeight: FontWeight.bold),textAlign: TextAlign.center,
                         ),
 Text(
                           " nobis est eligendi optio cumque nihil impedit ",
                           style: TextStyle(
-                              color: Colors.grey,
+                              color: MyColors.grey,
                               fontSize: 15,
                               fontWeight: FontWeight.bold),textAlign: TextAlign.center,
                         ),
@@ -242,11 +243,11 @@ Text(
                   Container(
                     height: 40,
                     width: 100,
-                    color: Colors.black,
+                    color: MyColors.black,
                     child: Center(
                       child: Text(
                         "More About",
-                        style: TextStyle(fontSize: 17, color: Colors.white,fontFamily: "Baloo"),
+                        style: TextStyle(fontSize: 17, color: MyColors.whitecolor,fontFamily: "Baloo"),
                       ),
                     ),
                   )
@@ -258,10 +259,10 @@ Text(
             Container(
               height: 80,
               width: 400,
-              color: Colors.black,
+              color: MyColors.black,
               child: 
                 Center(child: Text("Our Recipes",style: TextStyle(fontSize: 19,
-                 color: Colors.red,fontFamily: "Baloo"),))
+                 color: MyColors.redcolor,fontFamily: "Baloo"),))
             ),
 
 Row(mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,

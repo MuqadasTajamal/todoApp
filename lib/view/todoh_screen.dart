@@ -1,6 +1,7 @@
 import "dart:convert";
 
 import "package:flutter/material.dart";
+import "package:flutter_google_1/util/my_colors.dart";
 import "package:flutter_google_1/view/todolist_screen.dart";
 import "package:shared_preferences/shared_preferences.dart";
 
@@ -76,9 +77,9 @@ class _TodohScreenState extends State<TodohScreen> {
                     // fontSize: 15,
                     fontWeight: FontWeight.bold,
                     // fontFamily: "Lobster",
-                    color: Colors.white),
+                    color: MyColors.whitecolor),
               ),
-              color: Colors.purple,
+              color: MyColors.purplecolor,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
             )
@@ -128,7 +129,7 @@ class _TodohScreenState extends State<TodohScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple.shade300,
+      backgroundColor: MyColors.purple2,
       appBar: AppBar(
           actions: [
             IconButton(
@@ -137,13 +138,13 @@ class _TodohScreenState extends State<TodohScreen> {
                 },
                 icon: Icon(
                   Icons.clear,
-                  color: Colors.white,
+                  color: MyColors.whitecolor,
                   size: 30,
                 ))
           ],
           leading: Icon(
             Icons.check_box_sharp,
-            color: Colors.white,
+            color: MyColors.whitecolor,
             size: 40,
           ),
           title: Center(
@@ -152,10 +153,10 @@ class _TodohScreenState extends State<TodohScreen> {
               style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white),
+                  color: MyColors.whitecolor),
             ),
           ),
-          backgroundColor: Colors.purple),
+          backgroundColor: MyColors.purplecolor),
       body: todolist.isEmpty
           ? Center(
               child: Text(
@@ -188,7 +189,7 @@ class _TodohScreenState extends State<TodohScreen> {
                           },
                           icon: Icon(
                             Icons.delete,
-                            color: Colors.white,
+                            color: MyColors.whitecolor,
                             size: 50,
                           ))
                     ],
@@ -211,20 +212,20 @@ class _TodohScreenState extends State<TodohScreen> {
               controller: controller,
               decoration: InputDecoration(
                   hintText: "Add a new todo items",
-                  fillColor: const Color.fromARGB(255, 177, 143, 235),
+                  fillColor: MyColors.blue5,
                   filled: true,
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(color: Colors.white)),
+                      borderSide: BorderSide(color: MyColors.whitecolor)),
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(color: Colors.white))),
+                      borderSide: BorderSide(color: MyColors.whitecolor))),
             ),
           )),
       MaterialButton(
         height: 50,minWidth: 50,
          child: Icon(Icons.add),
-        color: Colors.white,
+        color: MyColors.whitecolor,
         shape: BeveledRectangleBorder(),
         onPressed: (){
         saveNewTask();

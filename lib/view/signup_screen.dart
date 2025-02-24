@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 
 
@@ -38,9 +39,9 @@ final _formKey = GlobalKey<FormState>();
           decoration: InputDecoration(    
             hintText: "Type your username",
             hintStyle: TextStyle(
-              color:Colors.grey),
+              color:MyColors.grey),
             prefixIcon: Icon(Icons.person_2_outlined,color: 
-            Colors.grey,),
+            MyColors.grey,),
           ),
         ),
         SizedBox(height:20 ,width: 20,),
@@ -61,9 +62,9 @@ final _formKey = GlobalKey<FormState>();
           decoration: InputDecoration(    
             hintText: "Type your password",
             hintStyle: TextStyle(
-              color:Colors.grey),
+              color:MyColors.grey),
             prefixIcon: Icon(Icons.lock,color: 
-            Colors.grey,),
+            MyColors.grey,),
           ),
         ),
         
@@ -85,9 +86,9 @@ final _formKey = GlobalKey<FormState>();
           decoration: InputDecoration(    
             hintText: "Type your password",
             hintStyle: TextStyle(
-              color:Colors.grey),
+              color:MyColors.grey),
             prefixIcon: Icon(Icons.lock,color: 
-            Colors.grey,),
+            MyColors.grey,),
           ),
         ),
         
@@ -101,7 +102,8 @@ final _formKey = GlobalKey<FormState>();
           child: Container(height: 50,width: double.infinity,
             decoration: BoxDecoration(
           gradient: LinearGradient(colors:[
-          Colors.blue,Colors.purple
+          MyColors.bluecolor,MyColors.purplecolor
+
           ],),
           borderRadius:BorderRadius.circular(50)   
             ),
@@ -109,7 +111,7 @@ final _formKey = GlobalKey<FormState>();
             child: Center(
           child: Text("SIGNUP",style: TextStyle(
           fontSize: 20,fontWeight: FontWeight.bold,
-          color: Colors.white
+          color: MyColors.whitecolor
           ),),
             ),),
         ),
@@ -118,20 +120,20 @@ final _formKey = GlobalKey<FormState>();
         
           Text("Or Sign Up Using"),
         SizedBox(height: 20,),
-        const Row(
+         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
           CircleAvatar(backgroundImage: AssetImage("image/f.jpeg"),
-           backgroundColor: Color(0xff3A5997),
+           backgroundColor: MyColors.blue9,
           ),
         SizedBox(width: 20,),
         CircleAvatar(backgroundImage: AssetImage("image/b.webp"),
-          backgroundColor: Color(0xff03A4F7),),
+          backgroundColor: MyColors.blue9,),
         
         SizedBox(width: 20,),
         
         CircleAvatar(backgroundImage: AssetImage('image/google.png'),
-          backgroundColor: Color(0xffE44736),
+          backgroundColor: MyColors.red6,
           ),
         SizedBox(width: 20,),
         ],),

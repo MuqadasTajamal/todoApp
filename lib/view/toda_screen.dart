@@ -1,4 +1,5 @@
 import"package:flutter/material.dart";
+import "package:flutter_google_1/util/my_colors.dart";
 
 class TodaScreen extends StatefulWidget {
   @override
@@ -67,7 +68,7 @@ Future<void> _showMyDialog() async {
                
 
                 _showMyDialog();
-              }, icon: Icon(Icons.clear,color: Colors.red,))
+              }, icon: Icon(Icons.clear,color: MyColors.red,))
             ],
           ),
         SizedBox(height: 20,),
@@ -89,7 +90,7 @@ Future<void> _showMyDialog() async {
                 controller.clear();
               });
 
-              },child:Icon(Icons.add,color: Colors.white,),color: Colors.purple ,shape: BeveledRectangleBorder(),height: 55,minWidth: 55,)
+              },child:Icon(Icons.add,color: MyColors.whitecolor,),color: MyColors.purplecolor ,shape: BeveledRectangleBorder(),height: 55,minWidth: 55,)
         
             ],
           ),
@@ -105,7 +106,7 @@ Future<void> _showMyDialog() async {
             // height: 50,
             padding: EdgeInsets.symmetric(horizontal: 5,vertical: 5),
             margin: EdgeInsets.all(5),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade200),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: MyColors.grey.shade200),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -119,8 +120,8 @@ Future<void> _showMyDialog() async {
                       
                     });
                    },
-                   child:Icon(Icons.delete,color: Colors.white,),
-                   color: Colors.red ,shape: BeveledRectangleBorder(),
+                   child:Icon(Icons.delete,color: MyColors.whitecolor,),
+                   color: MyColors.redcolor ,shape: BeveledRectangleBorder(),
                    height: 45,minWidth: 45,)
         
               ],

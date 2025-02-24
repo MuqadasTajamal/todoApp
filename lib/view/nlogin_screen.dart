@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 
 class NloginScreen extends StatelessWidget {
@@ -20,7 +21,7 @@ class NloginScreen extends StatelessWidget {
               child: Container(
                 height: 500,width: 500,
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white.withOpacity(0.3),
+                  border: Border.all(color: MyColors.whitecolor.withOpacity(0.3),
                   width: 4
                   )
                 ),
@@ -28,7 +29,7 @@ class NloginScreen extends StatelessWidget {
                  Column(
                    children: [SizedBox(height: 30,),
                      Text("Login",style: TextStyle(
-                     fontSize: 40,fontWeight: FontWeight.bold,color: Colors.white
+                     fontSize: 40,fontWeight: FontWeight.bold,color: MyColors.whitecolor
                               //  .withOpacity(0.3)
                  ),),
                Padding(
@@ -40,9 +41,9 @@ class NloginScreen extends StatelessWidget {
                         border: OutlineInputBorder(borderRadius:BorderRadius.circular(50)),
                         // focusedBorder: OutlineInputBorder()
                         hintText: "Username" ,hintStyle: TextStyle(
-                          color: Colors.white
+                          color: MyColors.whitecolor
                         ),
-                        suffixIcon: Icon(Icons.person,color: Colors.white,)
+                        suffixIcon: Icon(Icons.person,color: MyColors.whitecolor,)
                       ),
                      ),
                      SizedBox(height: 30,),
@@ -52,39 +53,39 @@ class NloginScreen extends StatelessWidget {
                         border: OutlineInputBorder(borderRadius:BorderRadius.circular(50)),
                         // focusedBorder: OutlineInputBorder()
                         hintText: "password" ,hintStyle: TextStyle(
-                          color: Colors.white
+                          color: MyColors.whitecolor
                         ),
-                        suffixIcon: Icon(Icons.lock,color: Colors.white,)
+                        suffixIcon: Icon(Icons.lock,color: MyColors.whitecolor,)
                       ),
                      ),
                      SizedBox(height: 30,),
          Row(
            children: [
-             Icon(Icons.check_box_sharp,color: Colors.white,),
+             Icon(Icons.check_box_sharp,color: MyColors.whitecolor,),
              SizedBox(width: 10,),
              Text("Remember me",style: TextStyle(fontSize:15,fontWeight: FontWeight.bold,
-             color: Colors.white),
+             color: MyColors.whitecolor),
              )
              ,Spacer(),
              Text("Forgote Password ?",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,
-             color: Colors.white),)
+             color: MyColors.whitecolor),)
            ],
          ),
           SizedBox(height: 30,),
          
          Container(height: 50,width: 500,decoration: BoxDecoration(
-           borderRadius: BorderRadius.circular(20),color: Colors.white,
+           borderRadius: BorderRadius.circular(20),color: MyColors.whitecolor,
          ),
          child: Center(
            child: Text("Login",style: TextStyle(fontSize:15,fontWeight: FontWeight.bold,
-               color: Colors.black),),
+               color: MyColors.black),),
          ),
          ),
          SizedBox(height: 10,),
          
          SizedBox(height: 10,),
              Text("Don't have an account? register",style: TextStyle(fontSize:15,fontWeight: FontWeight.bold,
-          color: Colors.white)),
+          color: MyColors.whitecolor)),
           // Image(image: AssetImage("image/image.png"))
            
          

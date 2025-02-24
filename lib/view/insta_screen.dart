@@ -1,5 +1,6 @@
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
+import "package:flutter_google_1/util/my_colors.dart";
 import "package:flutter_google_1/view/instasup_screen.dart";
 // import '';
 class InstaScreen extends StatelessWidget {
@@ -9,7 +10,7 @@ class InstaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var s = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xffFFFFFF),
+      backgroundColor:MyColors.white4 ,
       body: Padding(
         padding: s.width < 362
             ? EdgeInsets.only(top: 30, bottom: 5)
@@ -46,9 +47,9 @@ class InstaScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           border: Border.all(
                               color: s.width < 362
-                                  ? Colors.white
+                                  ? MyColors.whitecolor
                                   : const Color.fromARGB(255, 214, 206, 206)),
-                          color: Color(0xffFFFFFF),
+                          color: MyColors.white4,
                         ),
                         child: Padding(
                           padding: s.width < 362
@@ -73,24 +74,22 @@ class InstaScreen extends StatelessWidget {
                                   child: TextField(
                                     decoration: InputDecoration(
                                       filled: true,
-                                      fillColor: Color(0xffFAFAFA),
+                                      fillColor: MyColors.white4,
                                       enabledBorder: OutlineInputBorder(borderSide: 
-                                      BorderSide(color: const Color.fromARGB(255, 184, 179, 179))),
+                                      BorderSide(color: MyColors.grey1)),
                                         focusedBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
-                                                color: const Color.fromARGB(
-                                                    255, 173, 173, 173))),
+                                                color:  MyColors.white4)),
               
                                         // fillColor: Color(0xffFAFAFA),
                                         border: OutlineInputBorder(
                                             borderSide: BorderSide(
                                                 style: BorderStyle.solid,
-                                                color: const Color.fromARGB(
-                                                    255, 212, 209, 209))),
+                                                color:MyColors.white4 )),
                                         hintText: "phone number , username , or email",
                                         hintStyle: TextStyle(
                                             fontSize: s.width < 362 ? 10 : 12,
-                                            color: Colors.grey)),
+                                            color: MyColors.grey)),
                                   )),
                               SizedBox(
                                 height: 5,
@@ -101,23 +100,21 @@ class InstaScreen extends StatelessWidget {
                                   child: TextField(
                                     decoration: InputDecoration(
                                         filled: true,
-                                      fillColor: Color(0xffFAFAFA),
+                                      fillColor: MyColors.white4,
                                       enabledBorder: OutlineInputBorder(borderSide: 
-                                      BorderSide(color: const Color.fromARGB(255, 184, 179, 179))),
+                                      BorderSide(color: MyColors.white4)),
                                         focusedBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
-                                                color: const Color.fromARGB(
-                                                    255, 168, 168, 168))),
+                                                color: MyColors.white4)),
                                      
                                         border: OutlineInputBorder(
                                             borderSide: BorderSide(
                                                 style: BorderStyle.solid,
-                                                color: const Color.fromARGB(
-                                                    255, 212, 209, 209))),
+                                                color: MyColors.white4)),
                                         hintText: "password",
                                         hintStyle: TextStyle(
                                             fontSize: s.width < 362 ? 10 : 12,
-                                            color: Colors.grey)),
+                                            color: MyColors.grey)),
                                   )),
                               SizedBox(
                                 height: 15,
@@ -126,13 +123,13 @@ class InstaScreen extends StatelessWidget {
                                   height: 35,
                                   width: s.width < 362 ? 300 : 360,
                                   decoration: BoxDecoration(
-                                      color: Colors.blue,
+                                      color: MyColors.bluecolor,
                                       borderRadius: BorderRadius.circular(10)),
                                   child: Center(
                                       child: Text(
                                     "Log in",
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: MyColors.whitecolor,
                                         fontSize: s.width < 362 ? 12 : 15,
                                         fontWeight: FontWeight.bold),
                                   ))),
@@ -147,7 +144,7 @@ class InstaScreen extends StatelessWidget {
                                   Container(
                                     height: 1,
                                     width: s.width < 362 ? 80 : 110,
-                                    color: const Color.fromARGB(255, 204, 197, 197),
+                                    color: MyColors.white4,
                                   ),
                                   SizedBox(
                                     width: 10,
@@ -157,7 +154,7 @@ class InstaScreen extends StatelessWidget {
                                     "OR",
                                     style: TextStyle(fontSize: 12,
                                         color:
-                                            const Color.fromARGB(255, 117, 117, 117),
+                                            MyColors.grey2,
                                         fontWeight: FontWeight.w300),
                                   )),
                                   SizedBox(
@@ -166,7 +163,7 @@ class InstaScreen extends StatelessWidget {
                                   Container(
                                     height: 1,
                                     width: s.width < 362 ? 80 : 110,
-                                    color: const Color.fromARGB(255, 204, 198, 198),
+                                    color:   MyColors.grey2 ,
                                   )
                                 ],
                               ),
@@ -190,7 +187,7 @@ class InstaScreen extends StatelessWidget {
                                     style: TextStyle(
                                         fontSize: s.width < 362 ? 12 : 15,
                                         fontWeight: FontWeight.w300,
-                                        color: Colors.blue),
+                                        color: MyColors.bluecolor),
                                   )
                                 ],
                               ),
@@ -203,7 +200,7 @@ class InstaScreen extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: s.width < 362 ? 12 : 15,
                                     fontWeight: FontWeight.w300,
-                                    color: Colors.black),
+                                    color: MyColors.black),
                               )
                             ],
                           ),
@@ -219,15 +216,15 @@ class InstaScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                             border: Border.all(
                                 color: s.width < 362
-                                    ? Colors.white
-                                    : const Color.fromARGB(255, 201, 198, 198))),
+                                    ? MyColors.whitecolor
+                                    :   MyColors.grey2,)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
                               "Don't have an account?",
                               style: TextStyle(
-                                color: const Color.fromARGB(255, 0, 0, 0),
+                                color:   MyColors.black,
                               ),
                             ),
                             SizedBox(
@@ -240,7 +237,7 @@ class InstaScreen extends StatelessWidget {
                               },
                               child: Text(
                                 "Sign up",
-                                style: TextStyle(color: Colors.blue),
+                                style: TextStyle(color: MyColors.bluecolor),
                               ),
                             ),
                           ],
@@ -252,7 +249,7 @@ class InstaScreen extends StatelessWidget {
                       ),
                       Text(
                         "Get the app.",
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: MyColors.black),
                       ),
               
                       SizedBox(
@@ -267,7 +264,7 @@ class InstaScreen extends StatelessWidget {
                             width: s.width < 362 ? 100 : 140,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(5),
-                                color: Colors.black),
+                                color: MyColors.black),
                             child: Row(
                               children: [
                                 Container(height: 40,width: 40,
@@ -285,16 +282,14 @@ class InstaScreen extends StatelessWidget {
                                     Text(
                                       "Get it on ".toUpperCase(),
                                       style: TextStyle(
-                                          color: const Color.fromARGB(
-                                              255, 255, 247, 247),
+                                          color:    MyColors.white1,
                                           fontSize: s.width < 362 ? 8 : 10,
                                           fontWeight: FontWeight.w900),
                                     ),
                                     Text(
                                       "Google play ",
                                       style: TextStyle(
-                                          color: const Color.fromARGB(
-                                              255, 255, 247, 247),
+                                          color: MyColors.white1,
                                           fontSize: s.width < 362 ? 10 : 16,
                                           fontWeight: FontWeight.w900),
                                     ),
@@ -312,7 +307,7 @@ class InstaScreen extends StatelessWidget {
                             width: s.width < 362 ? 100 : 140,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(5),
-                                color: Colors.black),
+                                color: MyColors.black),
                             child: Row(
                               children: [
                                 Container(height: 40,width: 40,
@@ -330,16 +325,14 @@ class InstaScreen extends StatelessWidget {
                                     Text(
                                       "Get it on ".toUpperCase(),
                                       style: TextStyle(
-                                          color: const Color.fromARGB(
-                                              255, 255, 247, 247),
+                                          color: MyColors.white1,
                                           fontSize: s.width < 362 ? 8 : 10,
                                           fontWeight: FontWeight.w900),
                                     ),
                                     Text(
                                       "Google play ",
                                       style: TextStyle(
-                                          color: const Color.fromARGB(
-                                              255, 255, 247, 247),
+                                          color: MyColors.white1,
                                           fontSize: s.width < 362 ? 10 : 16,
                                           fontWeight: FontWeight.w900),
                                     ),
@@ -407,19 +400,19 @@ class InstaScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                Text("Meta",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("About",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Blog",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Jobs",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Help",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Api".toUpperCase(),style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Privacy",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Terms",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Location",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Instagram lite",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Threads",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Contact Uploading & Non-Users",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Meta Verified",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 10,),
+                Text("Meta",style: TextStyle(color:MyColors.grey3 ,fontSize: 12,),),SizedBox(width: 15,),
+                Text("About",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Blog",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Jobs",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Help",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Api".toUpperCase(),style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Privacy",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Terms",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Location",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Instagram lite",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Threads",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Contact Uploading & Non-Users",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Meta Verified",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),SizedBox(width: 10,),
                 
               ],),
                 SizedBox(height: 10,),
@@ -427,17 +420,17 @@ class InstaScreen extends StatelessWidget {
 
                 Row(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("English",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),
-                   Icon(Icons.keyboard_arrow_down_outlined,color: Color(0xff737373),),
+                    Text("English",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),
+                   Icon(Icons.keyboard_arrow_down_outlined,color: MyColors.grey3,),
                 SizedBox(width: 10,),
 
-                  Container(height: 10,width: 10,decoration: BoxDecoration(border: Border.all(color: Color(0xff737373),),borderRadius: BorderRadius.circular(5),),child: Center(child: Text("C",style: TextStyle(fontSize: 6,color: Color(0xff737373)),)),),
+                  Container(height: 10,width: 10,decoration: BoxDecoration(border: Border.all(color: MyColors.grey3,),borderRadius: BorderRadius.circular(5),),child: Center(child: Text("C",style: TextStyle(fontSize: 6,color: MyColors.grey3),)),),
                 SizedBox(width: 5,),
 
-                    Text("2025",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),
+                    Text("2025",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),
                 SizedBox(width: 5,),
                        
-                    Text("Instagram from Meta",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),
+                    Text("Instagram from Meta",style: TextStyle(color: MyColors.grey3,fontSize: 12,),),
                      
                   ],
                 ),

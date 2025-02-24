@@ -27,7 +27,7 @@ class _Todo1ScreenState extends State<Todo1Screen> {
             style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: MyColors.colors),
+                color: MyColors.black),
           ),
           content: const SingleChildScrollView(
             child: ListBody(

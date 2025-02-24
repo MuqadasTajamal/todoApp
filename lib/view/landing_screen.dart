@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -29,10 +30,10 @@ crossAxisAlignment: CrossAxisAlignment.center,
     )),
   ],),
    Column(children: [
-    Icon(Icons.add_circle,color:Colors.blue.shade900 ,),
+    Icon(Icons.add_circle,color:MyColors.bluecolor ,),
     SizedBox(height: 3,),
     Text("Add",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,
-      color: Colors.blue.shade900
+      color: MyColors.bluecolor
     ),),
   ],),
    Column(children: [
@@ -50,7 +51,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
 ],),
 
     ),
-      backgroundColor: const Color.fromARGB(255, 243, 239, 239),
+      backgroundColor: MyColors.whitecolor,
       body:
         SingleChildScrollView(
           child: Column(children: [
@@ -76,7 +77,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                     decoration: BoxDecoration(
                         image: DecorationImage(image: AssetImage("image/g1.jpeg")),
                         borderRadius: BorderRadius.circular(50),
-                        border: Border.all(color: Colors.black, width: 5)),
+                        border: Border.all(color: MyColors.black, width: 5)),
                   ),
                   SizedBox(
                     height: 20,
@@ -106,7 +107,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                             style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.pink),
+                                color: MyColors.pink),
                           ),
                           Text(" | 11-jan-2006")
                         ],
@@ -120,7 +121,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
               ),
               LinearProgressIndicator(
                 value: 0.7,
-                color: Colors.black,
+                color: MyColors.black,
                 borderRadius: BorderRadius.circular(5),
                 minHeight: 13,
               ),
@@ -135,7 +136,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                       height: 150,
                       width: 100,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -165,7 +166,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                       height: 150,
                       width: 100,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -195,7 +196,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                       height: 150,
                       width: 120,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -239,8 +240,8 @@ crossAxisAlignment: CrossAxisAlignment.center,
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                Colors.grey.shade200,
-                Colors.grey.shade700,
+                MyColors.white1,
+                MyColors.grey4,
               ])),
               child: SingleChildScrollView(
                 child: Column(
@@ -269,7 +270,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                             EdgeInsets.symmetric(horizontal: 8, vertical: 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
+                          color: MyColors.whitecolor,
                         ),
                         child: Row(
                           children: [
@@ -326,7 +327,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                             EdgeInsets.symmetric(horizontal: 8, vertical: 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
+                          color: MyColors.whitecolor,
                         ),
                         child: Row(
                           children: [
@@ -383,7 +384,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                             EdgeInsets.symmetric(horizontal: 8, vertical: 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
+                          color: MyColors.whitecolor,
                         ),
                         child: Row(
                           children: [
@@ -440,7 +441,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
                             EdgeInsets.symmetric(horizontal: 8, vertical: 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
+                          color:MyColors.whitecolor,
                         ),
                         child: Row(
                           children: [

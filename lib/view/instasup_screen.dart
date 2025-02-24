@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class InstasupScreen extends StatelessWidget {
   const InstasupScreen({super.key});
@@ -6,7 +7,7 @@ class InstasupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFFFFFF),
+      backgroundColor: MyColors.white5,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -18,7 +19,7 @@ class InstasupScreen extends StatelessWidget {
                   width: 350,
                   decoration: BoxDecoration(
                       border: Border.all(
-                          color: const Color.fromARGB(255, 182, 180, 180))),
+                          color: MyColors.white3)),
                   child: Padding(
                     padding:
                         const EdgeInsets.only(top: 40, left: 30, right: 30),
@@ -40,7 +41,7 @@ class InstasupScreen extends StatelessWidget {
                               // fontFamily: "Baloo",
                               fontWeight: FontWeight.w100,
                               fontSize: 15,
-                              color: Color(0xff737373)),
+                              color: MyColors.white6),
                         ),
                         Text(
                           " from your friends.",
@@ -48,7 +49,7 @@ class InstasupScreen extends StatelessWidget {
                               // fontFamily: "Baloo"
                               fontWeight: FontWeight.w100,
                               fontSize: 15,
-                              color: Color(0xff737373)),
+                              color: MyColors.white6),
                         ),
                         SizedBox(
                           height: 15,
@@ -58,21 +59,21 @@ class InstasupScreen extends StatelessWidget {
                           width: 300,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Colors.blue),
+                              color: MyColors.bluecolor),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
                                 height: 17,
                                 width: 17,
-                                color: Colors.white,
+                                color: MyColors.whitecolor,
                                 child: Center(
                                     child: Text(
                                   "f",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
-                                      color: Colors.blue),
+                                      color: MyColors.bluecolor),
                                 )),
                               ),
                               SizedBox(
@@ -81,7 +82,7 @@ class InstasupScreen extends StatelessWidget {
                               Text(
                                 " Log in to Facebook",
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: MyColors.whitecolor,
                                     fontFamily: "Baloo",
                                     fontWeight: FontWeight.bold,
                                     fontSize: 15),
@@ -97,7 +98,7 @@ class InstasupScreen extends StatelessWidget {
                             Container(
                               height: 1,
                               width: 110,
-                              color: const Color.fromARGB(255, 202, 196, 196),
+                              color: MyColors.white6,
                             ),
                             SizedBox(
                               width: 15,
@@ -106,7 +107,7 @@ class InstasupScreen extends StatelessWidget {
                               "OR",
                               style: TextStyle(
                                   color:
-                                      const Color.fromARGB(255, 121, 119, 119),
+                                     MyColors.white6,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 12),
                             ),
@@ -116,7 +117,7 @@ class InstasupScreen extends StatelessWidget {
                             Container(
                               height: 1,
                               width: 125,
-                              color: const Color.fromARGB(255, 194, 189, 189),
+                              color: MyColors.white6,
                             ),
                           ],
                         ),
@@ -129,20 +130,18 @@ class InstasupScreen extends StatelessWidget {
                             child: TextField(
                               decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color(0xffFAFAFA),
+                                fillColor: MyColors.white6,
                                 enabledBorder: OutlineInputBorder(borderSide: 
-                                BorderSide(color: const Color.fromARGB(255, 204, 191, 191))),
+                                BorderSide(color: MyColors.white6)),
                                   hintText: "Mobile Number or Email",
                                   hintStyle: TextStyle(
-                                      color: Colors.grey, fontSize: 13),
+                                      color: MyColors.grey, fontSize: 13),
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 211, 204, 204))),
+                                          color: MyColors.white6)),
                                   focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 211, 203, 203)))),
+                                          color: MyColors.white6))),
                             )),
                         SizedBox(
                           height: 5,
@@ -153,20 +152,18 @@ class InstasupScreen extends StatelessWidget {
                             child: TextField(
                               decoration: InputDecoration(
                                   filled: true,
-                                fillColor: Color(0xffFAFAFA),
+                                fillColor:MyColors.white6,
                                  enabledBorder: OutlineInputBorder(borderSide: 
-                                BorderSide(color: const Color.fromARGB(255, 204, 191, 191))),
+                                BorderSide(color: MyColors.white6)),
                                   hintText: "Password",
                                   hintStyle: TextStyle(
-                                      color: Colors.grey, fontSize: 13),
+                                      color: MyColors.grey, fontSize: 13),
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 204, 202, 202))),
+                                          color: MyColors.white6)),
                                   focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 204, 202, 202)))),
+                                          color: MyColors.white6))),
                             )),
                         SizedBox(
                           height: 5,
@@ -177,20 +174,18 @@ class InstasupScreen extends StatelessWidget {
                             child: TextField(
                               decoration: InputDecoration(
                                   filled: true,
-                                fillColor: Color(0xffFAFAFA),
+                                fillColor: MyColors.white6,
                                  enabledBorder: OutlineInputBorder(borderSide: 
-                                BorderSide(color: const Color.fromARGB(255, 204, 191, 191))),
+                                BorderSide(color: MyColors.white6)),
                                   hintText: "Full Name",
                                   hintStyle: TextStyle(
-                                      color: Colors.grey, fontSize: 13),
+                                      color: MyColors.grey, fontSize: 13),
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 204, 202, 202))),
+                                          color: MyColors.white6)),
                                   focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 204, 202, 202)))),
+                                          color: MyColors.white6))),
                             )),
                         SizedBox(
                           height: 5,
@@ -201,20 +196,18 @@ class InstasupScreen extends StatelessWidget {
                             child: TextField(
                               decoration: InputDecoration(
                                   filled: true,
-                                fillColor: Color(0xffFAFAFA),
+                                fillColor: MyColors.white6,
                                  enabledBorder: OutlineInputBorder(borderSide: 
-                                BorderSide(color: const Color.fromARGB(255, 204, 191, 191))),
+                                BorderSide(color: MyColors.white6)),
                                   hintText: "Username",
                                   hintStyle: TextStyle(
-                                      color: Colors.grey, fontSize: 13),
+                                      color: MyColors.grey, fontSize: 13),
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 204, 202, 202))),
+                                          color: MyColors.white6)),
                                   focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          color: const Color.fromARGB(
-                                              255, 204, 202, 202)))),
+                                          color: MyColors.white6))),
                             )),
                         SizedBox(
                           height: 20,
@@ -224,7 +217,7 @@ class InstasupScreen extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w100,
-                              color: const Color.fromARGB(255, 126, 125, 125)),
+                              color: MyColors.white6),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -235,14 +228,14 @@ class InstasupScreen extends StatelessWidget {
                                   fontSize: 12,
                                   fontWeight: FontWeight.w100,
                                   color:
-                                      const Color.fromARGB(255, 126, 125, 125)),
+                                      MyColors.white6),
                             ),
                             Text(
                               "Learn",
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Color(0xff00376B)),
+                                  color:MyColors.blue5),
                             ),
                           ],
                         ),
@@ -251,7 +244,7 @@ class InstasupScreen extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xff00376B)),
+                              color: MyColors.blue5),
                         ),
                         SizedBox(
                           height: 13,
@@ -264,28 +257,28 @@ class InstasupScreen extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Colors.grey),
+                                  color: MyColors.grey),
                             ),
                             Text(
                               "Terms",
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Color(0xff00376B)),
+                                  color: MyColors.blue5),
                             ),
                             Text(
                               ",",
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Colors.grey),
+                                  color: MyColors.grey),
                             ),
                             Text(
                               "Privacy",
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Color(0xff00376B)),
+                                  color: MyColors.blue5),
                             ),
                           ],
                         ),
@@ -297,7 +290,7 @@ class InstasupScreen extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Color(0xff00376B)),
+                                  color: MyColors.blue5),
                             ),
                             Text(
                               "and",
@@ -311,7 +304,7 @@ class InstasupScreen extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Color(0xff00376B)),
+                                  color: MyColors.blue5),
                             ),
                           ],
                         ),
@@ -322,12 +315,12 @@ class InstasupScreen extends StatelessWidget {
                           height: 35,
                           width: 300,
                           decoration: BoxDecoration(
-                              color: Color(0xff4CB5F9),
+                              color:MyColors.blue6 ,
                               borderRadius: BorderRadius.circular(10)),
                           child: Center(
                               child: Text(
                             "Sign up",
-                            style: TextStyle(color: Colors.white, fontSize: 15),
+                            style: TextStyle(color: MyColors.whitecolor, fontSize: 15),
                           )),
                         )
                       ],
@@ -348,11 +341,11 @@ class InstasupScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Have an account ?",
-                    style: TextStyle(color: const Color.fromARGB(255, 2, 2, 2)),
+                    style: TextStyle(color: MyColors.black),
                   ),
                   Text(
                     "Log in",
-                    style: TextStyle(color: Colors.blue),
+                    style: TextStyle(color: MyColors.bluecolor),
                   ),
                 ],
               ),
@@ -363,7 +356,7 @@ class InstasupScreen extends StatelessWidget {
             Text(
               "Get the app .",
               style: TextStyle(
-                  fontFamily: "Baloo", fontSize: 15, color: Colors.black),
+                  fontFamily: "Baloo", fontSize: 15, color: MyColors.black),
             ),
             SizedBox(
               height: 10,
@@ -375,7 +368,7 @@ class InstasupScreen extends StatelessWidget {
                   height: 40,
                   width: 140,
                   decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: MyColors.black,
                       borderRadius: BorderRadius.circular(5)),
                   child: Row(
                     children: [
@@ -385,12 +378,12 @@ class InstasupScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Get It On".toUpperCase(),
-                            style: TextStyle(color: Colors.white, fontSize: 10),
+                            style: TextStyle(color: MyColors.whitecolor, fontSize: 10),
                           ),
                           Text(
                             "Google Play",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: MyColors.whitecolor,
                                 fontSize: 17,
                                 fontFamily: "Baloo",
                                 fontWeight: FontWeight.bold),
@@ -407,7 +400,7 @@ class InstasupScreen extends StatelessWidget {
                   height: 40,
                   width: 130,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: MyColors.black,
                     //  borderRadius:BorderRadius.circular(5)
                   ),
                   child: Row(
@@ -418,12 +411,12 @@ class InstasupScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Get it from",
-                            style: TextStyle(color: Colors.white, fontSize: 10),
+                            style: TextStyle(color: MyColors.whitecolor, fontSize: 10),
                           ),
                           Text(
                             "Microsoft",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: MyColors.whitecolor,
                                 fontSize: 17,
                                 fontFamily: "Baloo",
                                 fontWeight: FontWeight.bold),
@@ -441,19 +434,19 @@ class InstasupScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                Text("Meta",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("About",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Blog",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Jobs",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Help",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Api".toUpperCase(),style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Privacy",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Terms",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Location",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Instagram lite",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Threads",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Contact Uploading & Non-Users",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 15,),
-                Text("Meta Verified",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),SizedBox(width: 10,),
+                Text("Meta",style: TextStyle(color:MyColors.grey5 ,fontSize: 12,),),SizedBox(width: 15,),
+                Text("About",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Blog",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Jobs",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Help",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Api".toUpperCase(),style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Privacy",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Terms",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Location",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Instagram lite",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Threads",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Contact Uploading & Non-Users",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 15,),
+                Text("Meta Verified",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),SizedBox(width: 10,),
                 
               ],),
                 SizedBox(height: 10,),
@@ -461,17 +454,17 @@ class InstasupScreen extends StatelessWidget {
 
                 Row(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("English",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),
-                   Icon(Icons.keyboard_arrow_down_outlined,color: Color(0xff737373),),
+                    Text("English",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),
+                   Icon(Icons.keyboard_arrow_down_outlined,color: MyColors.grey5,),
                 SizedBox(width: 10,),
 
-                  Container(height: 10,width: 10,decoration: BoxDecoration(border: Border.all(color: Color(0xff737373),),borderRadius: BorderRadius.circular(5),),child: Center(child: Text("C",style: TextStyle(fontSize: 6,color: Color(0xff737373)),)),),
+                  Container(height: 10,width: 10,decoration: BoxDecoration(border: Border.all(color: MyColors.grey5,),borderRadius: BorderRadius.circular(5),),child: Center(child: Text("C",style: TextStyle(fontSize: 6,color: MyColors.grey5),)),),
                 SizedBox(width: 5,),
 
-                    Text("2025",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),
+                    Text("2025",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),
                 SizedBox(width: 5,),
                        
-                    Text("Instagram from Meta",style: TextStyle(color: Color(0xff737373),fontSize: 12,),),
+                    Text("Instagram from Meta",style: TextStyle(color: MyColors.grey5,fontSize: 12,),),
                      
                   ],
                 ),

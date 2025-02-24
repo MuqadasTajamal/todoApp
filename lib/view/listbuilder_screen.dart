@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class ListbuilderScreen extends StatelessWidget {
   const ListbuilderScreen({super.key});
@@ -22,7 +23,7 @@ class ListbuilderScreen extends StatelessWidget {
                     // bottomLeft: Radius.circular(20),
                     ),
                       border: Border.all(
-                          color:index==0||index==9?const Color.fromARGB(255, 151, 11, 1):index ==1||index==3?Colors.green:index==2||index==4?Colors.blue:index==5||index==7?Colors.pink: Colors.black,
+                          color:index==0||index==9?MyColors.red3 :index ==1||index==3?MyColors.green:index==2||index==4?Colors.blue:index==5||index==7?Colors.pink: Colors.black,
                           width: 4,
                           style: BorderStyle.solid,
                           strokeAlign: BorderSide.strokeAlignCenter),
@@ -30,10 +31,10 @@ class ListbuilderScreen extends StatelessWidget {
                           // begin: Alignment.bottomCenter,
                           // end: Alignment.topCenter,
                           colors: [
-                            Color.fromARGB(255, 209, 14, 0),
-                            Color.fromARGB(255, 194, 174, 0),
-
-                            const Color.fromARGB(255, 65, 0, 179),
+                         MyColors.red4   ,
+                          MyColors.blue7 ,
+                         
+                          MyColors.amber1 ,
                             // Color.fromARGB(255, 0, 0, 0)
                           ])
                       //image: DecorationImage(image: NetworkImage(""))
@@ -46,7 +47,7 @@ class ListbuilderScreen extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: index == 0 ||index==9? Colors.indigo :index==4?Colors.black: Colors.white),
+                            color: index == 0 ||index==9? MyColors.indigo :index==4?MyColors.black: MyColors.whitecolor),
                       ),
                       SizedBox(
                         width: 500,
@@ -58,7 +59,7 @@ class ListbuilderScreen extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                                color:index ==0?Colors.amber:index==1?Colors.pinkAccent:index==2?Colors.cyan:index==3?Colors.black: index==4?Colors.deepPurple:index==5?Colors.grey:index==6?Colors.red:index==7?Colors.orange:index==8?Colors.cyan:index==9?Colors.green:Colors.white),
+                                color:index ==0?MyColors.amber:index==1?MyColors.pink:index==2?MyColors.cyan:index==3?MyColors.black: index==4?MyColors.purplecolor:index==5?MyColors.grey:index==6?MyColors.red:index==7?MyColors.orange1:index==8?MyColors.cyan:index==9?MyColors.green:MyColors.whitecolor),
                           ),
                           SizedBox(height: 5,),
                          Text(
@@ -66,7 +67,7 @@ class ListbuilderScreen extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                                color:index ==0?Colors.amber:index==1?Colors.pinkAccent:index==2?Colors.cyan:index==3?Colors.black: index==4?Colors.deepPurple:index==5?Colors.grey:index==6?Colors.red:index==7?Colors.orange:index==8?Colors.cyan:index==9?Colors.green:Colors.white),
+                                color:index ==0?MyColors.amber:index==1?MyColors.pink:index==2?MyColors.cyan:index==3?MyColors.black: index==4?MyColors.purplecolor:index==5?MyColors.grey:index==6?MyColors.red:index==7? MyColors.orange1:index==8?Colors.cyan:index==9?MyColors.green:MyColors.whitecolor),
                           ),
                         ],
                       ),

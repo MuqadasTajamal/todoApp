@@ -1,6 +1,7 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class Home1Screen extends StatelessWidget {
   const Home1Screen({super.key});
@@ -19,13 +20,13 @@ class Home1Screen extends StatelessWidget {
     ]),
     
       appBar: AppBar(
-      backgroundColor: Colors.black,
-      leading: Icon(Icons.menu,color: Colors.white,),
+      backgroundColor: MyColors.black,
+      leading: Icon(Icons.menu,color:  MyColors.whitecolor),
     title: Text("Slider",style: TextStyle(fontSize: 20,fontFamily: "Jose1",
-    fontWeight: FontWeight.bold,color: Colors.white),),
-    actions: [ Icon(Icons.person,color: Colors.white,),
+    fontWeight: FontWeight.bold,color:  MyColors.whitecolor),),
+    actions: [ Icon(Icons.person,color:  MyColors.whitecolor,),
      SizedBox(width: 5,),
-     Icon(Icons.heart_broken_outlined,color: Colors.white,),
+     Icon(Icons.heart_broken_outlined,color:  MyColors.whitecolor,),
      SizedBox(width: 10,),
     ],
     ),  

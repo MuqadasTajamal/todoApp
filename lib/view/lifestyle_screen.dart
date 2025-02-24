@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 import 'package:flutter_google_1/view/foody_screen.dart';
 import 'package:flutter_google_1/view/home_screen.dart';
 
@@ -20,16 +21,16 @@ class LifestyleScreen extends StatelessWidget {
             children: [
         InkWell(
           onTap: (){Navigator.push(context, CupertinoPageRoute(builder: (_)=>HomeScreen()));},
-          child: Icon(Icons.arrow_back,color: Colors.grey,size: 20)),
-        Icon(Icons.dehaze,color: Colors.grey,size: 20),
+          child: Icon(Icons.arrow_back,color: MyColors.grey,size: 20)),
+        Icon(Icons.dehaze,color: MyColors.grey,size: 20),
          SizedBox(width: 10,),
         Text("Lifestylo",style:TextStyle(
-          fontSize: 20,fontWeight: FontWeight.bold,color: Colors.red
+          fontSize: 20,fontWeight: FontWeight.bold,color: MyColors.red
         ) ,),
           Spacer(),
-        Icon(Icons.search,color: Colors.grey,size: 20,),
+        Icon(Icons.search,color: MyColors.grey,size: 20,),
         SizedBox(width: 10,),
-        Icon(Icons.person,color: Colors.grey,size: 20),
+        Icon(Icons.person,color: MyColors.grey,size: 20),
          SizedBox(width: 10,),
         
         
@@ -61,7 +62,7 @@ class LifestyleScreen extends StatelessWidget {
             fontSize: 20,fontWeight: FontWeight.bold
           ),),
           Spacer(),
-          Text("View all",style: TextStyle(color: Colors.red,
+          Text("View all",style: TextStyle(color: MyColors.red,
             // fontSize: 20,
             fontWeight: FontWeight.bold
           ),),

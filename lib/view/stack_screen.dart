@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class StackScreen extends StatelessWidget {
   const StackScreen({super.key});
@@ -26,7 +27,7 @@ class StackScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           gradient: LinearGradient(
                               begin: Alignment.center,
-                              colors: [Color(0xffCB1E23), Color(0xffEF1E23)])),
+                              colors: [MyColors.red7,MyColors.red7 ])),
                     ),
                   ),
 
@@ -52,7 +53,7 @@ class StackScreen extends StatelessWidget {
                       height: 150,width: 150,
                        decoration:BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                         // image: DecorationImage(image: NetworkImage(""),fit: BoxFit.cover,scale: 5)
                         ),
                         child: 
@@ -72,14 +73,14 @@ class StackScreen extends StatelessWidget {
                           TextSpan(
                             text: "User",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: MyColors.whitecolor,
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold),
                           ),
                           TextSpan(
                             text: " Name",
                             style: TextStyle(fontFamily:"Jose2",
-                                color: Colors.white.withOpacity(0.5),
+                                color: MyColors.whitecolor.withOpacity(0.5),
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -94,13 +95,13 @@ class StackScreen extends StatelessWidget {
                       height: 40,
                       width: 160,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                           child: Text(
                         "Login ",
-                        style: TextStyle(color: Color.fromARGB(255, 128, 48, 63)),
+                        style: TextStyle(color:MyColors.pink1 ),
                       )),
                     ),
                   ),
@@ -112,13 +113,13 @@ class StackScreen extends StatelessWidget {
                       height: 40,
                       width: 160,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                           child: Text(
                         "Register ",
-                        style: TextStyle(color: Color.fromARGB(255, 168, 39, 62)),
+                        style: TextStyle(color: MyColors.pink1),
                       )),
                     ),
                   ),
@@ -131,7 +132,7 @@ class StackScreen extends StatelessWidget {
                       " Business",
                       style: TextStyle(
                           fontFamily: "Baloo",
-                          color: Colors.white,
+                          color: MyColors.whitecolor,
                           fontSize: 25,
                           fontWeight: FontWeight.bold),
                     ),
@@ -154,7 +155,7 @@ class StackScreen extends StatelessWidget {
                     child: Text(
                       " www.example.com",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: MyColors.whitecolor,
                           fontSize: 20,
                           fontWeight: FontWeight.normal),
                     ),

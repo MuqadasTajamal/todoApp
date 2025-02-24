@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class Stack1Screen extends StatelessWidget {
   const Stack1Screen({super.key});
@@ -69,10 +70,10 @@ class Stack1Screen extends StatelessWidget {
                 width: s.width < 1049 ?s.width<850? s.width<660? s.width < 440? s.width<320? 100: 150:  200: 300: 400 : 500,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.white),
+                    color: MyColors.whitecolor),
                 child: Center(
                   child: Text("Login",
-                      style: TextStyle(color: const Color.fromARGB(255, 100, 19, 13),
+                      style: TextStyle(color: MyColors.red8,
                           fontSize:s.width<440? 15: 20,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Jose2")),
@@ -83,10 +84,10 @@ class Stack1Screen extends StatelessWidget {
                 width:s.width<1049?s.width<850? s.width <660? s.width<440? s.width<320? 100: 150:  200: 300: 400: 500,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.white),
+                    color: MyColors.whitecolor),
                       child: Center(
                         child: Text("Register",
-                          style: TextStyle(color: const Color.fromARGB(255, 100, 19, 13),
+                          style: TextStyle(color: MyColors.red8,
                           fontSize: s.width<440? 15:20,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Jose2")),
@@ -97,7 +98,7 @@ class Stack1Screen extends StatelessWidget {
             Spacer(),
 
                 Text("Business",style: TextStyle(
-                  color: Colors.white,
+                  color: MyColors.whitecolor,
                   fontSize: 20,fontWeight: FontWeight.bold,
                 // fontFamily: ""
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({super.key});
@@ -7,7 +8,7 @@ class ListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var s = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 192, 190, 190),
+      backgroundColor: MyColors.white5,
       body: Padding(
         padding:EdgeInsets.all    (  s.width<862? 10:  20.0),
         child: GridView.builder(
@@ -21,7 +22,7 @@ class ListScreen extends StatelessWidget {
             itemCount: 1000,
             itemBuilder: (context, index) {
               return Container(
-                color: Colors.white,
+                color: MyColors.whitecolor,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -43,7 +44,7 @@ class ListScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Not For Sale",
-                                style: TextStyle(color: Colors.amber, fontSize: s.width<412?5: 10),
+                                style: TextStyle(color: MyColors.amber, fontSize: s.width<412?5: 10),
                               ),
                               SizedBox(
                                 width: 5,
@@ -51,7 +52,7 @@ class ListScreen extends StatelessWidget {
                               Text(
                                 "😃",
                                 style: TextStyle(
-                                    color: Colors.pink,
+                                    color: MyColors.pink,
                                     fontSize:  s.width <412? 10:   14,
                                     fontWeight: FontWeight.bold),
                               )
@@ -76,12 +77,12 @@ class ListScreen extends StatelessWidget {
                                  20,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: "Jose",
-                                color: Colors.red),
+                                color: MyColors.red),
                           ),
                         ),
                         Text(
                           "-48%",
-                          style: TextStyle(color: Colors.grey, fontSize: s.width<412?10: 15),
+                          style: TextStyle(color: MyColors.grey, fontSize: s.width<412?10: 15),
                         ),
                       ],
                     ),
@@ -98,16 +99,16 @@ class ListScreen extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.star,
-                            color: Colors.amber,
+                            color: MyColors.amber,
                             size: s.width<412?10:20,
                           ),
-                          Icon(Icons.star, color: Colors.amber, size: s.width<412?10: 20),
-                          Icon(Icons.star, color: Colors.amber, size:s.width<412?10: 20),
-                          Icon(Icons.star, color: Colors.amber, size:s.width<412?10: 20),
-                          Icon(Icons.star, color: Colors.amber, size:s.width<412?10: 20),
+                          Icon(Icons.star, color: MyColors.amber, size: s.width<412?10: 20),
+                          Icon(Icons.star, color: MyColors.amber, size:s.width<412?10: 20),
+                          Icon(Icons.star, color: MyColors.amber, size:s.width<412?10: 20),
+                          Icon(Icons.star, color: MyColors.amber, size:s.width<412?10: 20),
                           Text(
                             "(72)",
-                            style: TextStyle(color: Colors.grey, fontSize: s.width<412?10: 15),
+                            style: TextStyle(color: MyColors.grey, fontSize: s.width<412?10: 15),
                           ),
                         ],
                       ),

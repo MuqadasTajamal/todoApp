@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class YtScreen extends StatelessWidget {
   const YtScreen({super.key});
@@ -15,13 +16,13 @@ class YtScreen extends StatelessWidget {
               children: [SizedBox(width: 10,),
               
         Text("7:50  ",style: TextStyle(
-        color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold ),),
+        color: MyColors.black,fontSize: 30,fontWeight: FontWeight.bold ),),
         
         SizedBox(width: 3,),
         
          Column(
-           children: [ Text("404",style: TextStyle(color: Colors.black),),
-        Text("k/s",style: TextStyle(color: Colors.black),) ],  ),
+           children: [ Text("404",style: TextStyle(color: MyColors.black),),
+        Text("k/s",style: TextStyle(color: MyColors.black),) ],  ),
                   
         SizedBox(width: 3,),
         
@@ -37,10 +38,10 @@ class YtScreen extends StatelessWidget {
         
         
                   Container(height: 20,width: 30,decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 48, 47, 47), ),child:Center(
+                    color: MyColors.black4, ),child:Center(
                       child: Text("VOWIFI",
                       style: TextStyle(fontSize: 8,fontWeight: FontWeight.bold,
-                      color: Colors.white),),
+                      color: MyColors.whitecolor),),
                     ) ,),
                   
         
@@ -52,8 +53,8 @@ class YtScreen extends StatelessWidget {
              Row(
          children: [
            Container(height:20 ,width: 20,decoration: BoxDecoration(
-            border: Border.all(color: Colors.black)
-           ),child:Text("VO LTE",style: TextStyle(color: Colors.black,
+            border: Border.all(color: MyColors.black)
+           ),child:Text("VO LTE",style: TextStyle(color: MyColors.black,
            fontSize: 8,fontWeight: FontWeight.bold,),),
            ),
          ],),],),
@@ -71,14 +72,14 @@ class YtScreen extends StatelessWidget {
           child: Row(children: [
           Container(height: 30,width: 40,child: Image.asset("image/yt.png"),),Text("YouTube",
           style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
-          color: Colors.black),),
+          color: MyColors.black),),
         
           Spacer(),
           Icon(Icons.cast),
           SizedBox(width: 20,),
           Container(height: 30,width: 30,
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)
-          ,color: Colors.white),
+          ,color: MyColors.whitecolor),
           child: Image.asset("image/ba.png",fit: BoxFit.fill,),),
         
           SizedBox(width: 20,),
@@ -94,56 +95,56 @@ class YtScreen extends StatelessWidget {
             children: [
             Container(
         height: 30,width: 30,decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),color: Color(0xffF2F2F2)),
+          borderRadius: BorderRadius.circular(10),color: MyColors.white4),
            child: Image.asset("image/j.png"), ),
         
           SizedBox(width: 15,),
           
             Container(height: 30,width: 50,decoration: BoxDecoration(
-        color: Colors.black,
+        color: MyColors.black,
         borderRadius: BorderRadius.circular(10),
             ), child: Center(
         child: Text("ALL",style: TextStyle(
-          color:Colors.white
+          color:MyColors.whitecolor
         ),),
             ),),
         
           SizedBox(width: 15,),
         
           Container(height: 30,width: 80,decoration: BoxDecoration(
-        color: Color(0xffF2F2F2),
+        color: MyColors.white4,
         borderRadius: BorderRadius.circular(10),
             ), child: Center(
         child: Text("Podcasts",style: TextStyle(
-          color:Colors.black
+          color:MyColors.black
         ),),
             ),),
         
           SizedBox(width: 15,),
         
             Container(height: 30,width: 50,decoration: BoxDecoration(
-        color: Color(0xffF2F2F2),
+        color: MyColors.white4,
         borderRadius: BorderRadius.circular(10),
             ),child: Center(
         child: Text("Music",style: TextStyle(
-          color: Colors.black
+          color: MyColors.black
         ),),
             ),),
         SizedBox(width: 15,),
         
             Container(height: 30,width: 50,decoration: BoxDecoration(
-        color: Color(0xffF2F2F2),
+        color: MyColors.white4,
         borderRadius: BorderRadius.circular(10),
             ), child: Center(
         child: Text("Mixes",style: TextStyle(
-          color: Colors.black
+          color: MyColors.black
         ),),
             ),),
         
             SizedBox(width: 15,),
             
            Container(height: 30,width: 19,decoration: BoxDecoration(
-        color: Color(0xffF2F2F2),
+        color: MyColors.white4,
         borderRadius: BorderRadius.circular(10),)) ],),
         ),SizedBox(),
         
@@ -221,20 +222,21 @@ class YtScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [Container(height: 30,width: 30,decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey,width: 5)
+              border: Border.all(color: MyColors.grey,width: 5)
              
             ),),
             
             Container(height:30 ,width: 30,decoration: BoxDecoration(
-              border: Border.all( color: Colors.grey,width: 5),
+              border: Border.all( color: MyColors.grey,width: 5),
               borderRadius:  BorderRadius.circular(10)
             ),),
-            Icon(Icons.play_arrow,size: 40,color: Colors.grey,)
+            Icon(Icons.play_arrow,size: 40,color: MyColors.grey,)
             
             ],),
           )
               ],
         ),
+        
       ),
       
     );

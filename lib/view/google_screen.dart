@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class GoogleScreen extends StatelessWidget {
   const GoogleScreen({super.key});
@@ -31,7 +32,7 @@ SizedBox(width: 10,),
 Container(width: 300,height: 35,
 decoration: BoxDecoration(
   borderRadius: BorderRadius.circular(10),
-  color: Colors.white
+  color:MyColors.whitecolor
 ),
 child:Row( children: [
     SizedBox(width: 10,),
@@ -70,12 +71,12 @@ SizedBox(width: 10,)
               ),
               Icon(
                 Icons.arrow_back,
-                color: Colors.grey.shade400,
+                color: MyColors.grey.shade400,
               ),
               SizedBox(
                 width: 10,
               ),
-              Icon(Icons.arrow_forward, color: Colors.grey.shade400),
+              Icon(Icons.arrow_forward, color: MyColors.grey.shade400),
               SizedBox(
                 width: 10,
               ),
@@ -88,7 +89,7 @@ SizedBox(width: 10,)
                 width: 900,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color:  Color(0xffECEFF6),
+                  color: MyColors.white1 ,
                 ),
                 child: Row(
                   children: [
@@ -116,11 +117,11 @@ SizedBox(width: 10,)
                 width: 30,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: const Color.fromARGB(255, 236, 241, 245),
+                  color:  MyColors.white2
                 ),
                 child: Icon(
                   Icons.person,
-                  color: Colors.blue,
+                  color: MyColors.bluecolor,
                 ),
               ),
               SizedBox(
@@ -131,7 +132,7 @@ SizedBox(width: 10,)
                 width: 300,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: Color(0xffD1E2FC),
+                  color:MyColors.white3 ,
                 ),
                 child: Row(
                   children: [
@@ -179,7 +180,7 @@ SizedBox(width: 10,)
                   fontFamily: "Jose",
                     fontSize: 90,
                     fontWeight: FontWeight.w400,
-                    color: Colors.blue),
+                    color: MyColors.bluecolor),
               ),
               Text(
                 "o",
@@ -187,7 +188,7 @@ SizedBox(width: 10,)
                   fontFamily: "Jose3",
                     fontSize: 90,
                     fontWeight: FontWeight.bold,
-                    color: Colors.red),
+                    color: MyColors.red),
               ),
               Text(
                 "o",
@@ -195,7 +196,7 @@ SizedBox(width: 10,)
                   fontFamily: "Jose3",
                     fontSize: 90,
                     fontWeight: FontWeight.bold,
-                    color: Colors.amber),
+                    color: MyColors.amber),
               ),
               Text(
                 "g",
@@ -203,7 +204,7 @@ SizedBox(width: 10,)
                   fontFamily: "Jose3",
                     fontSize: 80,
                     fontWeight: FontWeight.w100,
-                    color: Colors.blue),
+                    color: MyColors.bluecolor),
               ),
               Text(
                 "l",
@@ -211,7 +212,7 @@ SizedBox(width: 10,)
                   // fontFamily: "Jose2",
                     fontSize: 90,
                     fontWeight: FontWeight.w100,
-                    color: Colors.green),
+                    color: MyColors.green),
               ),
               Text(
                 "e",
@@ -219,7 +220,7 @@ SizedBox(width: 10,)
                    fontFamily: "Jose3",
                     fontSize: 90,
                     fontWeight: FontWeight.bold,
-                    color: Colors.red),
+                    color: MyColors.red),
               ),
             ],
           ),
@@ -233,7 +234,7 @@ SizedBox(width: 10,)
                   boxShadow: [BoxShadow(color: const Color.fromARGB(255, 194, 193, 193),
                   spreadRadius: 2,blurRadius: 2)],
                     borderRadius: BorderRadius.circular(80),
-                    color: Color(0xffFFFFFF)),
+                    color:MyColors.white4 ),
                 child: Row(
                   children: [
 
@@ -282,14 +283,14 @@ SizedBox(width: 10,)
                               width: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(30),
-                                color: const Color.fromARGB(255, 202, 200, 200),
+                                color:  MyColors.white5,
                               ),
                               child: Center(
                                 child: Container(
                                   height: 30,
                                   width: 30,
                                   decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: MyColors.whitecolor,
                                       borderRadius: BorderRadius.circular(15),
                                       image: DecorationImage(
                                           image: NetworkImage(
@@ -313,14 +314,14 @@ SizedBox(width: 10,)
                               width: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(30),
-                                color: const Color.fromARGB(255, 202, 200, 200),
+                                color: MyColors.white5,
                               ),
                               child: Center(
                                 child: Container(
                                   height: 25,
                                   width: 25,
                                   decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: MyColors.whitecolor,
                                       // borderRadius: BorderRadius.circular(15),
                                       image: DecorationImage(
                                           image: AssetImage("image/fl.png"))),
@@ -343,7 +344,7 @@ SizedBox(width: 10,)
                               width: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(30),
-                                color: const Color.fromARGB(255, 202, 200, 200),
+                                color: MyColors.white5,
                               ),
                               child: Center(
                                 child: Container(
@@ -375,7 +376,7 @@ SizedBox(width: 10,)
                               width: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(30),
-                                color: const Color.fromARGB(255, 202, 200, 200),
+                                color: MyColors.white5,
                               ),
                               child: Center(
                                 child: Container(
@@ -412,7 +413,7 @@ SizedBox(width: 10,)
                 width: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Color(0xffD0E5FA),
+                  color: MyColors.blue4,
                 ),
                 child: Row(
                   children: [

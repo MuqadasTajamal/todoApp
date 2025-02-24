@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter_google_1/util/my_colors.dart";
 import "package:lottie/lottie.dart";
 
 class GridviewScreen extends StatelessWidget {
@@ -9,7 +10,7 @@ class GridviewScreen extends StatelessWidget {
 
     var s = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: MyColors.whitecolor,
       body: SingleChildScrollView(
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.start,
@@ -17,7 +18,7 @@ class GridviewScreen extends StatelessWidget {
             Container(
               height: 50,
               width: double.infinity,
-              decoration: BoxDecoration(color: Colors.black),
+              decoration: BoxDecoration(color: MyColors.black),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 50, vertical: 5),
@@ -25,7 +26,7 @@ class GridviewScreen extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.airport_shuttle,
-                      color: const Color.fromARGB(255, 164, 255, 167),
+                      color: MyColors.green1 ,
                     ),
                     SizedBox(
                       width: 10,
@@ -36,7 +37,7 @@ class GridviewScreen extends StatelessWidget {
                         Text(
                           "Free shipping on all orders",
                           style: TextStyle(
-                              color: const Color.fromARGB(255, 148, 255, 151),
+                              color: MyColors.green1,
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
                               fontFamily: "jose1"),
@@ -44,7 +45,7 @@ class GridviewScreen extends StatelessWidget {
                         Text(
                           "Limited-time offer",
                           style: TextStyle(
-                              color: const Color.fromARGB(255, 148, 255, 151),
+                              color:MyColors.green1 ,
                               fontWeight: FontWeight.w300,
                               fontSize: 13,
                               fontFamily: "jose1"),
@@ -54,7 +55,7 @@ class GridviewScreen extends StatelessWidget {
                     Spacer(),
                     Icon(
                       Icons.attach_money_outlined,
-                      color: const Color.fromARGB(255, 252, 239, 123),
+                      color: MyColors.amber1,
                     ),
                     SizedBox(
                       width: 9,
@@ -65,7 +66,7 @@ class GridviewScreen extends StatelessWidget {
                         Text(
                           "Price adjustment",
                           style: TextStyle(
-                              color: const Color.fromARGB(255, 252, 239, 123),
+                              color: MyColors.amber1,
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
                               fontFamily: "jose1"),
@@ -73,7 +74,7 @@ class GridviewScreen extends StatelessWidget {
                         Text(
                           "Within 30 days",
                           style: TextStyle(
-                              color: const Color.fromARGB(255, 252, 239, 123),
+                              color:MyColors.amber1, 
                               fontWeight: FontWeight.w300,
                               fontSize: 13,
                               fontFamily: "jose1"),
@@ -85,7 +86,7 @@ class GridviewScreen extends StatelessWidget {
                     ),
                     Icon(
                       Icons.aod_rounded,
-                      color: const Color.fromARGB(255, 252, 239, 123),
+                      color:MyColors.amber1,
                     ),
                     SizedBox(
                       width: 9,
@@ -93,7 +94,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "Get the Temu App",
                       style: TextStyle(
-                          color: const Color.fromARGB(255, 252, 239, 123),
+                          color:MyColors.amber1,
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
                           fontFamily: "jose1"),
@@ -105,7 +106,8 @@ class GridviewScreen extends StatelessWidget {
             Container(
               height: 65,
               width: double.infinity,
-              decoration: BoxDecoration(color: Colors.white,border: Border.all(color: Colors.grey.shade300)),
+              decoration: BoxDecoration(color: MyColors.whitecolor,border: Border.all(
+                color: MyColors.grey.shade300)),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 50, vertical: 5),
@@ -137,7 +139,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "Best Sellers",
                       style: TextStyle(
-                          color: Colors.black,
+                          color: MyColors.black,
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
                           fontFamily: "jose1"),
@@ -159,7 +161,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "5- Star Rated",
                       style: TextStyle(
-                          color: Colors.black,
+                          color: MyColors.black,
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
                           fontFamily: "jose1"),
@@ -178,7 +180,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "New Year",
                       style: TextStyle(
-                          color: Colors.black,
+                          color: MyColors.black,
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
                           fontFamily: "jose1"),
@@ -191,7 +193,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "New Arrivals",
                       style: TextStyle(
-                          color: Colors.black,
+                          color: MyColors.black,
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
                           fontFamily: "jose1"),
@@ -204,7 +206,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "Categories",
                       style: TextStyle(
-                          color: Colors.black,
+                          color: MyColors.black,
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
                           fontFamily: "jose1"),
@@ -229,7 +231,7 @@ class GridviewScreen extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: "search",
-                          hintStyle: TextStyle(color: Colors.grey),
+                          hintStyle: TextStyle(color: MyColors.grey),
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30)),
                           suffixIcon: Padding(
@@ -238,12 +240,12 @@ class GridviewScreen extends StatelessWidget {
                               height: 20,
                               width: 20,
                               decoration: BoxDecoration(
-                                color: Colors.black,
+                                color: MyColors.black,
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Icon(
                                 Icons.search,
-                                color: Colors.white,
+                                color: MyColors.whitecolor,
                                 size: 20,
                                 weight: 20,
                               ),
@@ -258,7 +260,7 @@ class GridviewScreen extends StatelessWidget {
             
                     Icon(
                       Icons.person_outline,
-                      color: Colors.black,
+                      color: MyColors.black,
                       size: 30,
                       weight: 20,
                     ),
@@ -273,7 +275,7 @@ class GridviewScreen extends StatelessWidget {
                           Text(
                             "Orders &",
                             style: TextStyle(
-                                color: Colors.black,
+                                color: MyColors.black,
                                 fontWeight: FontWeight.w300,
                                 fontSize: 13,
                                 fontFamily: "jose1"),
@@ -281,7 +283,7 @@ class GridviewScreen extends StatelessWidget {
                           Text(
                             "Account",
                             style: TextStyle(
-                                color: Colors.black,
+                                color: MyColors.black,
                                 fontWeight: FontWeight.w300,
                                 fontSize: 13,
                                 fontFamily: "jose1"),
@@ -303,7 +305,7 @@ class GridviewScreen extends StatelessWidget {
                     Text(
                       "Support",
                       style: TextStyle(
-                          color: Colors.black,
+                          color: MyColors.black,
                           fontWeight: FontWeight.w300,
                           fontSize: 13,
                           fontFamily: "jose1"),
@@ -381,7 +383,7 @@ class GridviewScreen extends StatelessWidget {
                                       Text(
                                         "Rs.",
                                         style: TextStyle(
-                                           color: Colors.black,
+                                           color: MyColors.black,
                                             // color: Color(0xffFB7C0B),
                                             // fontWeight: FontWeight.bold,
                                             fontSize: 13,
@@ -391,7 +393,7 @@ class GridviewScreen extends StatelessWidget {
                                       Text(
                                         "3,618",
                                         style: TextStyle(
-                                           color: Colors.black,
+                                           color: MyColors.black,
                                             // color: Color(0xffFB7C0B),
                                             fontWeight: FontWeight.w300,
                                             fontSize: 20,
@@ -403,7 +405,7 @@ class GridviewScreen extends StatelessWidget {
                                       Text(
                                         "5,118",
                                         style: TextStyle(decoration: TextDecoration.lineThrough,
-                                           color: Colors.grey,
+                                           color: MyColors.grey,
                                             // color: Color(0xffFB7C0B),
                                             fontWeight: FontWeight.w300,
                                             fontSize: 11,
@@ -415,7 +417,7 @@ class GridviewScreen extends StatelessWidget {
                                       Text(
                                         "40K+",
                                         style: TextStyle(
-                                            color: Colors.grey,
+                                            color: MyColors.grey,
                                             fontWeight: FontWeight.w300,
                                             fontSize: 10,
                                             fontFamily: "jose1"),
@@ -424,7 +426,7 @@ class GridviewScreen extends StatelessWidget {
                                       Text(
                                         "sold",
                                         style: TextStyle(
-                                            color: Colors.black,
+                                            color: MyColors.black,
                                             fontWeight: FontWeight.w300,
                                             fontSize: 10,
                                             fontFamily: "jose1"),
@@ -433,7 +435,7 @@ class GridviewScreen extends StatelessWidget {
                                       ),
                                                               Container(height: 18,width: 35,decoration: BoxDecoration(
                                                                 borderRadius: BorderRadius.circular(5),
-                                                                border: Border.all(color: Color(0xffFB7701))),
+                                                                border: Border.all(color:MyColors.orange2 )),
                                                               child: Padding(
                                                                 padding: const EdgeInsets.symmetric(vertical: 0.5),
                                                                 child: Center(child: Text("-29% ",style: TextStyle(fontSize: 10,color:  Color(0xffFB7701)),)),
@@ -449,10 +451,10 @@ class GridviewScreen extends StatelessWidget {
                                               borderRadius:
                                                   BorderRadius.circular(15),
                                               border: Border.all(
-                                                  color: Colors.black)),
+                                                  color: MyColors.black)),
                                           child: TextField(
                                             decoration: InputDecoration(
-                                                focusColor: Colors.black,
+                                                focusColor: MyColors.black,
                                                 border: OutlineInputBorder(
                                                     borderRadius:
                                                         BorderRadius
@@ -475,30 +477,30 @@ class GridviewScreen extends StatelessWidget {
                                         children: [
                                           Icon(
                                             Icons.star,
-                                            color: Color(0xff000000),
+                                            color:MyColors.black4 ,
                                             size: 15,
                                           ),
                                               SizedBox(width: 2,),
                                                               
                                           Icon(Icons.star,
-                                              color: Color(0xff000000),
+                                              color: MyColors.black4,
                                               size: 15),
                                               SizedBox(width: 2,),
                                                               
                                                               
                                           Icon(Icons.star,
-                                              color: Color(0xff000000),
+                                              color: MyColors.black4,
                                               size: 15),
                                               SizedBox(width: 2,),
                                                               
                                           Icon(Icons.star,
-                                              color: Color(0xff000000),
+                                              color: MyColors.black4,
                                               size: 15),
                                                               
                                               SizedBox(width: 2,),
                                                               
                                           Icon(Icons.star,
-                                              color: Color(0xff000000),
+                                              color: MyColors.black4,
                                               size: 15),
                                           // Icon(Icons.star,
                                           //     color: Color(0xff000000),
@@ -508,7 +510,7 @@ class GridviewScreen extends StatelessWidget {
                                           Text(
                                             "3,276",
                                             style: TextStyle(
-                                                color: Colors.grey,fontSize: 18),
+                                                color: MyColors.grey,fontSize: 18),
                                           ),
                                                               
                                         ],

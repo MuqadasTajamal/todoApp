@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 class MyColors {
   static var green=        Colors.green;
   static var green1=       Color.fromARGB(255, 164, 255, 167);
-  static var redcolor=     Colors.red;
+  static var green2=       Color(0xffE4FFE0);
+  static var green3=       Color(0xff7FAC00);
   static var black=        Colors.black;
   static var black1=       Color.fromARGB(255, 48, 47, 47);
   static var black2 =      Color.fromARGB(255, 71, 71, 71);
@@ -25,7 +26,14 @@ class MyColors {
   static var blue4=        Color(0xffD0E5FA);
   static var blue5 =       Color(0xff00376B);
   static var blue6=        Color(0xff4CB5F9);
-  static var purplecolor=  Colors.purple;
+  static var blue7=        Color.fromARGB(255, 65, 0, 179);
+  static var blue8=        Color(0xff3A5997);
+  static var blue9=        Color(0xff343B4E);
+  static var cyan=         Colors.cyan;
+  static var cyan1=        Color.fromARGB(255, 50, 161, 152);
+  static var cyan2=        Color(0xff1B9E98);
+  static var cyan3=        Color(0xff3A5664);
+  static var cyan4=        Color(0xff395666);
   static var browncolor=   Colors.brown;
   static var brown1 =      Color.fromARGB(255, 112, 68, 3);
   static var lime=         Colors.lime;
@@ -37,20 +45,30 @@ class MyColors {
   static var grey3=        Color(0xff737373);
   static var grey4=        const Color.fromARGB(255, 119, 113, 113);
   static var grey5=        Color(0xff737373);
+  static var redcolor=     Colors.red;
   static var red =         Color.fromARGB(255, 94, 18, 12);
+  static var red1   =      Color.fromARGB(255, 124, 29, 23);  
   static var red2=         Color.fromARGB(255, 90, 10, 4);
   static var red3  =       Color.fromARGB(255, 151, 11, 1);
-  
+  static var red4=         Color.fromARGB(255, 209, 14, 0);
+  static var red5=         Color(0xffE44736);
+  static var red6=         Color(0xffFD5C62);
+  static var red7=         Color(0xffCB1E23);
+  static var red8=         Color.fromARGB(255, 128, 48, 63);
+  static var red9=         Color.fromARGB(255, 75, 10, 6);
   static var yellow=       Colors.yellow;
   static var yellow1=      Color.fromARGB(255, 255, 211, 80);
   static var yellow2 =     Color(0xffFACA51);
   static var amber=        Colors.amber;
   static var amber1=       Color.fromARGB(255, 252, 239, 123);
+  static var amber2=       Color.fromARGB(255, 194, 174, 0);
+  static var amber3=       Color (0xffCFFF46);
+  static var purplecolor=  Colors.purple;
   static var purple1 =     Colors.purple.shade500;
   static var purple3=      Color.fromARGB(255, 99, 3, 75);
   static var purple4=      Color.fromARGB(255, 90, 5, 116);
   static var purple2 =     Colors.purple.shade300;
   static var pink =        Color.fromARGB(255, 255, 135, 175);
+  static var pink1=        Color.fromARGB(255, 128, 48, 63);
   static var indigo =      Colors.indigo;
-  static var red1   =      Color.fromARGB(255, 124, 29, 23);  
 }

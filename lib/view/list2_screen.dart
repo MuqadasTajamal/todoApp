@@ -1,4 +1,5 @@
 import"package:flutter/material.dart";
+import "package:flutter_google_1/util/my_colors.dart";
 
 class List2Screen extends StatelessWidget {
   const List2Screen({super.key});
@@ -12,7 +13,7 @@ class List2Screen extends StatelessWidget {
         itemCount: 10,
          itemBuilder:
          (context,index){return
-         Container(color: Colors.amber,) 
+         Container(color: MyColors.amber,) 
         
         ;}),);
   }

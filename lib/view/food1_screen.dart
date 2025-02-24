@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class Food1Screen extends StatelessWidget {
   const Food1Screen({super.key});
@@ -9,26 +10,26 @@ class Food1Screen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 50),
       child: Column(children: [
         Row(children: [
-          CircleAvatar(child: Icon(Icons.menu,color: Colors.red,),),
+          CircleAvatar(child: Icon(Icons.menu,color: MyColors.red,),),
          SizedBox(width: 15,),
-          Icon(Icons.add_location_rounded,color: Colors.red,),
+          Icon(Icons.add_location_rounded,color: MyColors.red,),
 
          SizedBox(width: 10,),
           Text("Buenos Aires,Argentina",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
           SizedBox(width: 10,),
           Container(height: 30,width: 30,
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.amber),)
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: MyColors.amber),)
         ],),
         Row(children: [
           Container(height: 70,width: 250,
             child: TextField(decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.search,color: Colors.black,)),),
+                prefixIcon: Icon(Icons.search,color: MyColors.black,)),),
           ),
          SizedBox(width: 20,),
             
           Container(height: 35,width: 35,decoration: BoxDecoration(
-            color: Colors.red,
+            color: MyColors.red,
             borderRadius: BorderRadius.circular(10)),
           child:Column(
             children: [

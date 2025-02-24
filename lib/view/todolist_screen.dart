@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class TodolistScreen extends StatelessWidget {
   const TodolistScreen({super.key, required this.taskname,
@@ -18,20 +19,20 @@ final Function(bool?)? onChanged;
                  child: Container(
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
                   
-                  color: Colors.purple,                          
+                  color: MyColors.purplecolor,                          
                   ),
                   padding: EdgeInsets.all(20),
                   child: Row(
                     children: [
-                      Checkbox(value: taskcomplete, onChanged: onChanged,checkColor: Colors.black,
-                      side: BorderSide(color: Colors.white),
-                      activeColor: Colors.white,
+                      Checkbox(value: taskcomplete, onChanged: onChanged,checkColor: MyColors.black,
+                      side: BorderSide(color: MyColors.whitecolor),
+                      activeColor: MyColors.whitecolor,
                       ),
                       Text(taskname.toString(),
                       style: TextStyle(fontSize: 20,
-                                      fontWeight: FontWeight.bold,color: Colors.white,
+                                      fontWeight: FontWeight.bold,color: MyColors.whitecolor,
                                       decoration: taskcomplete? TextDecoration.lineThrough:TextDecoration.none
-                                      ,decorationColor: Colors.white,decorationThickness: 2),),
+                                      ,decorationColor: MyColors.whitecolor,decorationThickness: 2),),
                     ],
                   ),),
                );

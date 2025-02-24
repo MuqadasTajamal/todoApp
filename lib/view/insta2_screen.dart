@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter_google_1/util/my_colors.dart";
 
 class Insta2Screen extends StatelessWidget {
   var list = [
@@ -74,7 +75,7 @@ class Insta2Screen extends StatelessWidget {
             width: 100,
             decoration: BoxDecoration(
                 border: Border.all(
-                    color: const Color.fromARGB(255, 224, 222, 222))),
+                    color:MyColors.white3)),
             child: Column(
               children: [
                 SizedBox(
@@ -90,7 +91,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.home,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -98,7 +99,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.search,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -106,7 +107,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.explore,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -114,7 +115,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.ondemand_video_outlined,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -122,7 +123,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.maps_ugc_rounded,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -130,7 +131,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.favorite_border,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -138,7 +139,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.add_box_outlined,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -153,7 +154,7 @@ class Insta2Screen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.menu,
-                  color: Colors.black,
+                  color: MyColors.black,
                   size: 30,
                 ),
                 SizedBox(
@@ -206,15 +207,15 @@ class Insta2Screen extends StatelessWidget {
                           trailing: MaterialButton(
                               height: 50,
                               minWidth: 90,
-                              color: Colors.blue,
-                              splashColor: Colors.blue,
+                              color: MyColors.bluecolor,
+                              splashColor: MyColors.bluecolor,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10)),
                               onPressed: () {},
                               child: Text(
                                 "Follow",
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: MyColors.whitecolor,
                                     fontSize: 10,
                                     fontWeight: FontWeight.normal),
                               )),

@@ -29,7 +29,7 @@ class FirstBar extends StatelessWidget {
                 Icon(Icons.flash_on_rounded,size: 40,color: MyColors.amber,),
                 Icon(Icons.replay_10_outlined,size: 40,color: MyColors.green,),
             Icon(Icons.stop_outlined,size: 40,color: MyColors.red,),
-            Icon(Icons.manage_search_sharp,size: 40,color: Colors.blue[400],),],
+            Icon(Icons.manage_search_sharp,size: 40,color: MyColors.blue1,),],
             ),
           ),
         Container(

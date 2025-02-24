@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class WBScreen extends StatelessWidget {
   const WBScreen({super.key});
@@ -13,7 +14,7 @@ class WBScreen extends StatelessWidget {
              
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xff3A5664),
+                color: MyColors.cyan3,
               ),
               child: Column(
                 children: [
@@ -25,7 +26,7 @@ class WBScreen extends StatelessWidget {
                       Text(
                         "7:35",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: MyColors.whitecolor,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
@@ -34,40 +35,40 @@ class WBScreen extends StatelessWidget {
                       ),
                       Icon(
                         Icons.alarm_add_rounded,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       Icon(
                         Icons.cloud,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       Spacer(),
                       Icon(
                         Icons.wifi,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       Icon(
                         Icons.sim_card,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       Icon(
                         Icons.signal_cellular_4_bar_rounded,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       Icon(
                         Icons.battery_full_rounded,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 20,
@@ -86,25 +87,25 @@ class WBScreen extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white)),
+                              color: MyColors.whitecolor)),
                       Spacer(),
                       Icon(
                         Icons.camera_alt_sharp,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       Icon(
                         Icons.search_rounded,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       Icon(
                         Icons.more_vert,
-                        color: Colors.white,
+                        color: MyColors.whitecolor,
                       ),
                       SizedBox(
                         width: 20,
@@ -118,14 +119,14 @@ class WBScreen extends StatelessWidget {
             ),
          ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("image/p1.jpeg"),),
-          title: Text("Ashan Pitac Flutter",selectionColor: Color(0xffFAFCFC),),
+          title: Text("Ashan Pitac Flutter",selectionColor: MyColors.whitecolor,),
           subtitle: Text("reacted to ok"),
           trailing: Text("yesterday"),
         
          )  , 
         ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("Image/d.png"),),
-          title: Text("Danyal Quran App 2",selectionColor: Color(0xffFAFCFC),),
+          title: Text("Danyal Quran App 2",selectionColor: MyColors.whitecolor,),
           subtitle: Text("ok"),
           trailing: Column(
             children: [
@@ -140,22 +141,22 @@ class WBScreen extends StatelessWidget {
          ) ,  
          ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("image/b.jpeg"),),
-          title: Text("Shoaib Batch 6 Flutter",selectionColor: Color(0xffFAFCFC),),
+          title: Text("Shoaib Batch 6 Flutter",selectionColor: MyColors.whitecolor,),
           subtitle: Text("ok"),
           trailing: Column(
             children: [
         Text("yesterday"),SizedBox(height: 11,),
         Container(height: 20,width: 20,decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),color: Colors.green
+          borderRadius: BorderRadius.circular(10),color: MyColors.green
         ),
-        child: Center(child: Text("1",style: TextStyle(color: Colors.white),)),)
+        child: Center(child: Text("1",style: TextStyle(color: MyColors.whitecolor),)),)
             ],
           ),
         
          ) ,  
          ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("image/image.png"),),
-          title: Text("Junaid New Number Best...",selectionColor: Color(0xffFAFCFC),),
+          title: Text("Junaid New Number Best...",selectionColor: MyColors.whitecolor,),
           subtitle: Text("reacted to ok"),
           trailing: Column(
             children: [
@@ -163,8 +164,8 @@ class WBScreen extends StatelessWidget {
         SizedBox(height: 11,),
          Container(height: 20,
           width: 20,
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.green,),
-          child: Center(child: Text("1",style: TextStyle(color: Colors.white),)),
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: MyColors.green,),
+          child: Center(child: Text("1",style: TextStyle(color: MyColors.whitecolor),)),
           ),
             ],
           ),
@@ -172,14 +173,14 @@ class WBScreen extends StatelessWidget {
          ),   
          ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("image/i.png"),),
-          title: Text("Internal Projects",selectionColor: Color(0xffFAFCFC),),
+          title: Text("Internal Projects",selectionColor: MyColors.whitecolor,),
           subtitle: Text("AbuZar:yes "),
           trailing: Column(
             children: 
             [Text("yesterday"),
         SizedBox(height: 11,),Container(height:20,width: 20,decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10) ,color: Colors.green 
-            ),child: Center(child: Text("3",style: TextStyle(color: Colors.white),)), )
+            borderRadius: BorderRadius.circular(10) ,color: MyColors.green 
+            ),child: Center(child: Text("3",style: TextStyle(color:MyColors.whitecolor),)), )
         ,      
             ],
           ),
@@ -187,30 +188,30 @@ class WBScreen extends StatelessWidget {
          ),
          ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("image/n.jpeg"),),
-          title: Text("+92 326 9436454",selectionColor: Color(0xffFAFCFC),),
+          title: Text("+92 326 9436454",selectionColor: MyColors.whitecolor,),
           subtitle: Text("https://github.com/dlutton/flutter... "),
           trailing: Column(
             children: [
         Text("yesterday"),SizedBox(height: 11,),
         Container(height: 20,width: 20,decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),color: Colors.green
+          borderRadius: BorderRadius.circular(10),color: MyColors.green
         ),
-        child: Center(child: Text("1",style: TextStyle(color: Colors.white),)),)
+        child: Center(child: Text("1",style: TextStyle(color: MyColors.whitecolor),)),)
             ],
           ),
         
          ),   
          ListTile(
           leading: CircleAvatar(backgroundImage: AssetImage("image/p2.jpeg"),),
-          title: Text("Autism support",selectionColor: Color(0xffFAFCFC),),
+          title: Text("Autism support",selectionColor: MyColors.whitecolor,),
           subtitle: Text("Ubaid:Dall E Animals zip"),
           trailing: Column(
             children: [
         Text("yesterday"),SizedBox(height: 11,),
         Container(height: 20,width: 20,decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),color: Colors.green
+          borderRadius: BorderRadius.circular(10),color: MyColors.green
         ),
-        child: Center(child: Text("10",style: TextStyle(color: Colors.white),)),)
+        child: Center(child: Text("10",style: TextStyle(color: MyColors.whitecolor),)),)
             ],
           ),
         
@@ -225,8 +226,8 @@ class WBScreen extends StatelessWidget {
             children: [
        
         Container(height: 40,width: 40,decoration: BoxDecoration(
-          color: Color(0xff395666),borderRadius: BorderRadius.circular(4)
-        ),child: Icon(Icons.chat_bubble_rounded,size: 25,color: Colors.white,),
+          color: MyColors.cyan4,borderRadius: BorderRadius.circular(4)
+        ),child: Icon(Icons.chat_bubble_rounded,size: 25,color: MyColors.whitecolor,),
         ),
         // )
             ],
@@ -244,13 +245,13 @@ class WBScreen extends StatelessWidget {
                 children: [Padding(
                   padding: const EdgeInsets.all(10),
                   child: Container(height: 20,width: 20,decoration: BoxDecoration(
-                      color: Colors.green,borderRadius: BorderRadius.circular(7),
+                      color: MyColors.green,borderRadius: BorderRadius.circular(7),
                     ),
                     child: Center(child: Text("99+",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),)),
                     ),
                 ),
                   Container(height: 50,width: 50,decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),color: Color(0xffEAE5EA)
+                    borderRadius: BorderRadius.circular(30),color:MyColors.white4
                   ),child:Icon(Icons.chat)
                   ),
                   
@@ -269,7 +270,7 @@ class WBScreen extends StatelessWidget {
                     // color: Colors.green
                     ),),
                       Container(height: 50,width: 50,decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),color: Color(0xffEAE5EA)
+                        borderRadius: BorderRadius.circular(50),color: MyColors.white4
                       ), child:Icon(Icons.call) 
                       // Image.asset("image/c.png",fit: BoxFit.cover,),
                       ),
@@ -283,9 +284,9 @@ class WBScreen extends StatelessWidget {
                   Column(
                     children: [Container(height: 15,width: 15,
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.green),),
+                    color: MyColors.green),),
                       Container(height: 50,width: 50,decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),color: Color(0xffEAE5EA)
+                        borderRadius: BorderRadius.circular(50),color: MyColors.white4
                       ),
                       child:Icon(Icons.update) 
                       ),
@@ -300,10 +301,10 @@ class WBScreen extends StatelessWidget {
                   children: [Center(
                     child: Container(height: 15,width: 15,
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.green),),
+                    color: MyColors.green),),
                   ),
                     Container(height: 50,width: 50,decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),color: Color(0xffEAE5EA)
+                        borderRadius: BorderRadius.circular(50),color:MyColors.white3
                       ),
                       child: Icon(Icons.add_to_photos_outlined,),),
                   Text("Tool")],
@@ -319,15 +320,15 @@ class WBScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [Container(height: 30,width: 30,decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey,width: 5)
+              border: Border.all(color: MyColors.grey,width: 5)
              
             ),),
             
             Container(height:30 ,width: 30,decoration: BoxDecoration(
-              border: Border.all( color: Colors.grey,width: 5),
+              border: Border.all( color: MyColors.grey,width: 5),
               borderRadius:  BorderRadius.circular(10)
             ),),
-            Icon(Icons.play_arrow,size: 40,color: Colors.grey,)
+            Icon(Icons.play_arrow,size: 40,color: MyColors.grey,)
             
             ],),
           )

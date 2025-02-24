@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_1/util/my_colors.dart';
 
 class Listview1Screen extends StatelessWidget {
   const Listview1Screen({super.key});
@@ -23,10 +24,10 @@ class Listview1Screen extends StatelessWidget {
                     height: 50,width: 50,
                     decoration: BoxDecoration( 
                       borderRadius: BorderRadius.circular(20),
-                      border:Border.all(color: Colors.red
+                      border:Border.all(color: MyColors.red
                      ) ),
                      child: CircleAvatar(radius: 40,
-                       backgroundColor: Colors.amber,
+                       backgroundColor: MyColors.amber,
                      ),
                    ),
                  );
