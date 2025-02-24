@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_google_1/home_screen.dart';
-import 'package:flutter_google_1/landing_screen.dart';
-import 'package:flutter_google_1/signup_screen.dart';
+import 'package:flutter_google_1/view/home_screen.dart';
+import 'package:flutter_google_1/view/landing_screen.dart';
+import 'package:flutter_google_1/view/signup_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   // const LoginScreen({super.key});

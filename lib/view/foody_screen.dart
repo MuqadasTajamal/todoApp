@@ -1,8 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_google_1/lifestyle_screen.dart';
-import 'package:flutter_google_1/travel_screen.dart';
+import 'package:flutter_google_1/view/lifestyle_screen.dart';
+import 'package:flutter_google_1/view/travel_screen.dart';
 
 class FoodyScreen extends StatelessWidget {
   const FoodyScreen({super.key});

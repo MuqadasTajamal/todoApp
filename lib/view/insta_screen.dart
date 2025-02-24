@@ -1,8 +1,7 @@
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
-import "package:flutter_google_1/instasup_screen.dart";
-import "package:flutter_google_1/travel_screen.dart";
-
+import "package:flutter_google_1/view/instasup_screen.dart";
+// import '';
 class InstaScreen extends StatelessWidget {
   const InstaScreen({super.key});
 
@@ -22,21 +21,25 @@ class InstaScreen extends StatelessWidget {
                 mainAxisAlignment: s.width < 362
                     ? MainAxisAlignment.start
                     : MainAxisAlignment.center,
-                // crossAxisAlignment: CrossAxisAlignment.center,
+                    // mainAxisSize: context,
                 children: [
-                  if (s.width > 877)
-                    Image(
+                  // if (s.width > 877)
+                       Image(
                       image: AssetImage("image/insta.jpeg"),
                       height: 600,
                       width: 370,
                       fit: BoxFit.fill,
                     ),
+                 
+
+                 
                   SizedBox(
                     width: 10,
                   ),
                   Column(
+                    
                     children: [
-                      // if(s.width>360)
+                      // if
                       Container(
                         height: 420,
                         width: s.width < 362 ? 300 : 350,
@@ -303,16 +306,21 @@ class InstaScreen extends StatelessWidget {
                           SizedBox(
                             width: 10,
                           ),
-                          Container(
+
+                         Container(
                             height: 40,
-                            width: s.width < 362 ? 100 : 120,
+                            width: s.width < 362 ? 100 : 140,
                             decoration: BoxDecoration(
-                                // borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(5),
                                 color: Colors.black),
                             child: Row(
                               children: [
-                                Image.network(
-                                    "https://yt3.googleusercontent.com/wU0l8BUFlv5DtSfesfGhb3Cw1oLiCOd07at80o11ubYgocBr-0wwgtkSrruE3BggIbuqKWhSbw=s160-c-k-c0x00ffffff-no-rj"),
+                                Container(height: 40,width: 40,
+                                  child: Center(
+                                    child: Image.network(
+                                        "https://yt3.googleusercontent.com/wU0l8BUFlv5DtSfesfGhb3Cw1oLiCOd07at80o11ubYgocBr-0wwgtkSrruE3BggIbuqKWhSbw=s160-c-k-c0x00ffffff-no-rj"),
+                                  ),
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -320,7 +328,7 @@ class InstaScreen extends StatelessWidget {
                                       height: 3,
                                     ),
                                     Text(
-                                      "Get it from ",
+                                      "Get it on ".toUpperCase(),
                                       style: TextStyle(
                                           color: const Color.fromARGB(
                                               255, 255, 247, 247),
@@ -328,18 +336,59 @@ class InstaScreen extends StatelessWidget {
                                           fontWeight: FontWeight.w900),
                                     ),
                                     Text(
-                                      "Microsoft ",
+                                      "Google play ",
                                       style: TextStyle(
                                           color: const Color.fromARGB(
                                               255, 255, 247, 247),
-                                          fontSize: s.width < 362 ? 12 : 16,
+                                          fontSize: s.width < 362 ? 10 : 16,
                                           fontWeight: FontWeight.w900),
                                     ),
                                   ],
                                 )
                               ],
                             ),
-                          )
+                          ),
+
+
+
+
+                          // Container(
+                          //   height: 40,
+                          //   width: s.width < 362 ? 100 : 120,
+                          //   decoration: BoxDecoration(
+                          //       // borderRadius: BorderRadius.circular(5),
+                          //       color: Colors.black),
+                          //   child: Row(
+                          //     children: [
+                          //       Image.network(
+                                    // "https://yt3.googleusercontent.com/wU0l8BUFlv5DtSfesfGhb3Cw1oLiCOd07at80o11ubYgocBr-0wwgtkSrruE3BggIbuqKWhSbw=s160-c-k-c0x00ffffff-no-rj"),
+                          //       Column(
+                          //         crossAxisAlignment: CrossAxisAlignment.start,
+                          //         children: [
+                          //           SizedBox(
+                          //             height: 3,
+                          //           ),
+                          //           Text(
+                          //             "Get it from ",
+                          //             style: TextStyle(
+                          //                 color: const Color.fromARGB(
+                          //                     255, 255, 247, 247),
+                          //                 fontSize: s.width < 362 ? 8 : 10,
+                          //                 fontWeight: FontWeight.w900),
+                          //           ),
+                          //           Text(
+                          //             "Microsoft ",
+                          //             style: TextStyle(
+                          //                 color: const Color.fromARGB(
+                          //                     255, 255, 247, 247),
+                          //                 fontSize: s.width < 362 ? 12 : 16,
+                          //                 fontWeight: FontWeight.w900),
+                          //           ),
+                          //         ],
+                          //       )
+                          //     ],
+                          //   ),
+                          // )
                         ],
                       ),
                     ],

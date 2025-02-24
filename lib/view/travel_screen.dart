@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_google_1/lifestyle_screen.dart';
+import 'package:flutter_google_1/view/lifestyle_screen.dart';
 
 class TravelScreen extends StatelessWidget {
   const TravelScreen({super.key});

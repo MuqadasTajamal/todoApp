@@ -160,18 +160,25 @@ class _DarazScreenState extends State<DarazScreen> {
                         ),),
                                 SizedBox(height: 10,),
                               Text("Flash Sale",
-                              style: TextStyle(fontFamily: "jose3",fontSize: 22,color: Color(0xff424242),  fontWeight: FontWeight.w200),),
+                              style: TextStyle(
+                                fontFamily: "jose3",fontSize: 22,
+                                color: Color(0xff424242),  fontWeight: FontWeight.w200),),
                                 SizedBox(height: 10,),
                                 Container(
                   height: 50,width:1200 ,decoration:BoxDecoration(color: Colors.white,   border: Border(bottom: BorderSide(color: const Color.fromARGB(255, 148, 147, 147)))) ,
                                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(children: [
-                    Text("On Sale Now",style: TextStyle(fontFamily: "jose3",fontSize: 15,color: Color(0xffF78624),  fontWeight: FontWeight.w200),),
+                    Text("On Sale Now",style: TextStyle(
+                      
+                      fontFamily: "jose3",fontSize: 15,color: Color(0xffF78624),
+                        fontWeight: FontWeight.w200),),
                   
                   Spacer(),
                    Container(height: 35,width:200 ,decoration: BoxDecoration(border: Border.all(color: Color(0xffF78624))),
-                  child: Center(child: Text("SHOP ALL PRODUCTS",style: TextStyle(fontFamily: "jose3",fontSize: 15,color: Color(0xffF78624),  fontWeight: FontWeight.w200),)),),
+                  child: Center(child:
+                   Text("SHOP ALL PRODUCTS",style: TextStyle(fontFamily: "jose3",fontSize: 15,
+                   color: Color(0xffF78624),  fontWeight: FontWeight.w200),)),),
                     
                   ],),
                                 ),),
@@ -198,7 +205,8 @@ class _DarazScreenState extends State<DarazScreen> {
                       
                       Row(
                     children: [
-                      Text("Rs.949",style: TextStyle(  decoration: TextDecoration.lineThrough,color: Colors.grey,decorationColor: Colors.grey),),
+                      Text("Rs.949",style: TextStyle(  
+                        decoration: TextDecoration.lineThrough,color: Colors.grey,decorationColor: Colors.grey),),
                       
                       SizedBox(width: 5,),
                       Text("-52%",style: TextStyle(color: Colors.black,fontSize: 15),)

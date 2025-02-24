@@ -1,9 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_google_1/foody_screen.dart';
-import 'package:flutter_google_1/home_screen.dart';
-import 'package:flutter_google_1/travel_screen.dart';
+import 'package:flutter_google_1/view/foody_screen.dart';
+import 'package:flutter_google_1/view/home_screen.dart';
 
 class LifestyleScreen extends StatelessWidget {
   const LifestyleScreen({super.key});
