@@ -28,78 +28,107 @@ class _Listview1ScreenState extends State<Listview1Screen> {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: MyColors.purplecolor,
+          foregroundColor: MyColors.white1,
           toolbarHeight: 80,
           title: Text("ListTile"),
           centerTitle: true,
           titleTextStyle: TextStyle(
               fontSize: 50, color: MyColors.whitecolor, fontFamily: "Satify")),
-      
-      
       endDrawer: Drawer(
         clipBehavior: Clip.hardEdge,
         elevation: 200,
         backgroundColor: MyColors.whitecolor,
         shadowColor: MyColors.whitecolor,
-        child: Container(color: MyColors.purple1,child: ListView(
-          children: [
-            DrawerHeader(child:Center(child: 
-            Text("ListTile",style: TextStyle(color: MyColors.whitecolor,
-           fontSize: 30 
-            ),))),
-Column(children: [
-  Row(children: [
-    InkWell(
-      onTap: (){
-        Navigator.push(context,MaterialPageRoute(builder: (_)=> HomeScreen()));
-        //  Navigator.push(context,CupertinoPageRoute(builder: (_)=>LifestyleScreen()));
-      },
-      child: Icon(Icons.home,color: MyColors.whitecolor,)),
-    SizedBox(width: 10,),
-    Text("Home",style: TextStyle(color: MyColors.whitecolor,
-           fontSize: 20 
-            ))
-  ],),
-
- SizedBox(height: 20,),
-
-    Row(children: [
-    InkWell(
-      onTap: (){
-        Navigator.push(context,MaterialPageRoute(builder: (_)=> TravelScreen()));
-        //  Navigator.push(context,CupertinoPageRoute(builder: (_)=>LifestyleScreen()));
-      },
-      child: CircleAvatar(backgroundImage: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_1wYMDdN3R2N_PAh86iAekgq7FCp1THAcw&s"),)),
-    SizedBox(width: 10,),
-    Text("Travel",style: TextStyle(color: MyColors.whitecolor,
-           fontSize: 20 
-            ))
-  ],),
-
-   SizedBox(height: 20,),
-
-      Row(children: [
-    InkWell(
-      onTap: (){
-        Navigator.push(context,MaterialPageRoute(builder: (_)=> FoodyScreen()));
-        //  Navigator.push(context,CupertinoPageRoute(builder: (_)=>LifestyleScreen()));
-      },
-      child: CircleAvatar(backgroundImage: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgpd1QzqXn0JFy-_3nCNqfMXnrDunfxwy-w&s"),)),
-    SizedBox(width: 10,),
-    Text("Foody",style: TextStyle(color: MyColors.whitecolor,
-           fontSize: 20 
-            ))
-  ],)
-
-
-],)
-
-          ],
-
-        ),),
+        child: Container(
+          color: MyColors.purple1,
+          child: ListView(
+            children: [
+              DrawerHeader(
+                  child: Center(
+                      child: Text(
+                "ListTile",
+                style: TextStyle(color: MyColors.whitecolor, fontSize: 30),
+              ))),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => HomeScreen()));
+                            //  Navigator.push(context,CupertinoPageRoute(builder: (_)=>LifestyleScreen()));
+                          },
+                          child: Icon(
+                            Icons.home,
+                            color: MyColors.whitecolor,
+                          )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Home",
+                          style: TextStyle(
+                              color: MyColors.whitecolor, fontSize: 20))
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => TravelScreen()));
+                            //  Navigator.push(context,CupertinoPageRoute(builder: (_)=>LifestyleScreen()));
+                          },
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_1wYMDdN3R2N_PAh86iAekgq7FCp1THAcw&s"),
+                          )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Travel",
+                          style: TextStyle(
+                              color: MyColors.whitecolor, fontSize: 20))
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => FoodyScreen()));
+                            //  Navigator.push(context,CupertinoPageRoute(builder: (_)=>LifestyleScreen()));
+                          },
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgpd1QzqXn0JFy-_3nCNqfMXnrDunfxwy-w&s"),
+                          )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Foody",
+                          style: TextStyle(
+                              color: MyColors.whitecolor, fontSize: 20))
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
       ),
-
-
-
       backgroundColor: MyColors.whitecolor,
       body: SingleChildScrollView(
         child: Column(
